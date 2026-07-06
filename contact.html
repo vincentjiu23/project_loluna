@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Contact Us - Loluna Premium Baby Skincare</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <!-- Tailwind Configuration -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#fed800",
+                        "on-tertiary-fixed-variant": "#3f484d",
+                        "surface-dim": "#dbd9d9",
+                        "on-primary-fixed-variant": "#004d62",
+                        "secondary-fixed": "#ffe165",
+                        "tertiary-fixed-dim": "#bfc8ce",
+                        "surface": "#fbf9f8",
+                        "on-secondary-container": "#705e00",
+                        "surface-container-high": "#eae8e7",
+                        "on-background": "#1b1c1c",
+                        "primary-fixed-dim": "#58d5ff",
+                        "secondary-fixed-dim": "#e7c400",
+                        "on-error": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#001f29",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#bcc8cf",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#f2f0f0",
+                        "on-primary-container": "#004b5f",
+                        "background": "#fbf9f8",
+                        "inverse-primary": "#58d5ff",
+                        "surface-bright": "#fbf9f8",
+                        "tertiary": "#576065",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#2cc1ed",
+                        "outline": "#6d797f",
+                        "surface-container-highest": "#e4e2e2",
+                        "primary-fixed": "#b9eaff",
+                        "tertiary-container": "#abb4ba",
+                        "on-tertiary-container": "#3d464b",
+                        "on-secondary-fixed": "#221b00",
+                        "on-secondary-fixed-variant": "#544600",
+                        "on-surface-variant": "#3d494e",
+                        "surface-variant": "#e4e2e2",
+                        "primary": "#006781",
+                        "on-error-container": "#93000a",
+                        "on-primary": "#ffffff",
+                        "surface-container-low": "#f5f3f3",
+                        "on-surface": "#1b1c1c",
+                        "on-tertiary-fixed": "#141d21",
+                        "error-container": "#ffdad6",
+                        "surface-container": "#efeded",
+                        "secondary": "#6f5d00",
+                        "inverse-surface": "#303030",
+                        "tertiary-fixed": "#dbe4ea",
+                        "surface-tint": "#006781"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "40px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "unit": "8px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-xl": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 8px 32px 0 rgba(0, 103, 129, 0.05);
+        }
+        
+        .bubble-hover {
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        
+        .bubble-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 40px rgba(0, 103, 129, 0.1);
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+
+        .input-pill:focus {
+            outline: none;
+            border-color: #2cc1ed;
+            box-shadow: 0 0 0 4px rgba(44, 193, 237, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopAppBar -->
+<nav class="bg-surface/80 dark:bg-surface-container-low/80 backdrop-blur-md text-primary font-body-md fixed w-full top-0 z-50 border-b border-outline-variant/30 shadow-sm transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex items-center gap-8">
+<a class="font-headline-lg text-headline-lg text-primary tracking-tight" href="index.html">Loluna</a>
+<div class="hidden md:flex items-center gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="about.html">About Us</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="products.html">Products</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Articles</a>
+<a class="text-primary font-bold border-b-2 border-primary" href="contact.html">Contact Us</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-surface-container-highest transition-all">
+<span class="material-symbols-outlined">shopping_basket</span>
+</button>
+<div class="w-10 h-10 rounded-full overflow-hidden bg-primary-container flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="A clean, studio-lit professional headshot of a smiling young mother representing the caring brand identity, set against a soft, out-of-focus pastel blue background that matches the Loluna skincare aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvp5GD9fD31dpAS05etWDzCgoq_tR_lJKvIRhDkZ9NKtTS8lhZdeqSZoJiy1TgpljfJkLPuFr8_pS6PyPH3Vc6TayTr2EVOaxr2HHMlgJX01DXYNWwNoqpmA3fV8kuH7bh1k3_DKXR-Cx7gYwX-sMCzTWu0rvG933r8T89k-QsPB7NPU9KTT9pRicQlsb0aInwDFNa0GqkC3mMDj0rY3w9jWzM44EZYJ2MiqHJqX011OwjeKYoyvQhtgcDiYyTtJE1MeY3ndzh8JE"/>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-20">
+<!-- Hero Section -->
+<section class="relative px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-16 text-center">
+<div class="absolute -top-20 -left-20 w-64 h-64 bg-primary-fixed/30 rounded-full blur-3xl -z-10 animate-pulse"></div>
+<div class="absolute top-40 -right-20 w-80 h-80 bg-secondary-fixed/20 rounded-full blur-3xl -z-10"></div>
+<h1 class="font-headline-xl text-headline-xl text-primary mb-4">We'd Love to Hear From You</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Whether you have a question about our organic ingredients, need help with an order, or just want to share your baby's skincare journey, our team is here for you.
+            </p>
+</section>
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Contact Form Column -->
+<div class="lg:col-span-7">
+<div class="glass-card rounded-lg p-8 md:p-12">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-8">Send us a Message</h2>
+<form class="space-y-6" id="contactForm">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant px-4">Full Name</label>
+<input class="w-full px-6 py-4 rounded-full border border-outline-variant bg-surface-container-lowest input-pill text-body-md transition-all" name="name" placeholder="Enter your name" required="" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant px-4">Email Address</label>
+<input class="w-full px-6 py-4 rounded-full border border-outline-variant bg-surface-container-lowest input-pill text-body-md transition-all" name="email" placeholder="example@email.com" required="" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant px-4">Inquiry Type</label>
+<select class="w-full px-6 py-4 rounded-full border border-outline-variant bg-surface-container-lowest input-pill text-body-md transition-all appearance-none">
+<option>General Inquiry</option>
+<option>Product Support</option>
+<option>Wholesale/B2B</option>
+<option>Press &amp; Media</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant px-4">Your Message</label>
+<textarea class="w-full px-6 py-4 rounded-lg border border-outline-variant bg-surface-container-lowest input-pill text-body-md transition-all resize-none" name="message" placeholder="How can we help you today?" required="" rows="5"></textarea>
+</div>
+<div class="pt-4">
+<button class="w-full md:w-auto px-10 py-4 bg-primary-container text-on-primary-container font-bold rounded-full shadow-lg hover:shadow-xl bubble-hover active:scale-95 transition-all flex items-center justify-center gap-2" type="submit">
+                                    Send Message
+                                    <span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Contact Info & Map Column -->
+<div class="lg:col-span-5 flex flex-col gap-gutter">
+<!-- Info Cards -->
+<div class="glass-card rounded-lg p-8 flex flex-col gap-6">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-fixed-dim flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-primary uppercase tracking-wider mb-1">Our Headquarters</h3>
+<p class="text-body-md text-on-surface">Equity Tower, 35th Floor<br/>SCBD Lot 9, South Jakarta 12190</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary-container">mail</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-primary uppercase tracking-wider mb-1">Email Us</h3>
+<p class="text-body-md text-on-surface">hello@loluna.id<br/>support@loluna.id</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-tertiary-fixed-variant">phone_iphone</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-primary uppercase tracking-wider mb-1">WhatsApp Hotline</h3>
+<p class="text-body-md text-on-surface">+62 812-3456-7890<br/>Mon-Fri, 9AM - 6PM</p>
+</div>
+</div>
+<div class="pt-4 border-t border-outline-variant/30">
+<h3 class="font-label-md text-label-md text-primary uppercase tracking-wider mb-4">Connect with us</h3>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center bubble-hover" href="#">
+<span class="material-symbols-outlined text-on-surface-variant">share_reviews</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center bubble-hover" href="#">
+<span class="material-symbols-outlined text-on-surface-variant">photo_camera</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center bubble-hover" href="#">
+<span class="material-symbols-outlined text-on-surface-variant">play_circle</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center bubble-hover" href="#">
+<span class="material-symbols-outlined text-on-surface-variant">chat</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Map Section -->
+<div class="glass-card rounded-lg overflow-hidden h-full min-h-[300px] relative">
+<div class="absolute inset-0 bg-surface-container-highest/50 flex flex-col items-center justify-center p-8 text-center" data-alt="A stylized, minimalist vector map of Jakarta's SCBD district in soft pastel tones of blue and cream, featuring a prominent 'bubble' marker on the Equity Tower. The map is clean, with only essential landmarks shown to maintain the premium skincare brand's aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAL2UlJv_Cub2V7hwS8m_-oMSVTv_cR0ZPnqcSHi4zNElPysDdZy4G8ZwZy7AQsrIlMj20OYgeYKbBgk2MRl7FOOMpcSXWP3Vj3lWwT16xTTLpI8Qp39Sfjq3lFV8P52y0fHL1ASj6uBmF1Kd7gD3e7kNqkPgzg8zTqZEjke0Mu5ILeSJi1hNBISiBelAzohhEdrTEkh6EXlwRCOKHUcR2OAmA8ekQY5uLC8umI8SIeQFF4ZhHXRvGMSZG9r-uGDqULgdGNFkptozY')">
+<div class="z-10 bg-white/90 backdrop-blur shadow-lg p-6 rounded-lg max-w-xs bubble-hover">
+<span class="material-symbols-outlined text-primary text-4xl mb-2" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<h4 class="font-bold text-primary">Visit our HQ</h4>
+<p class="text-sm text-on-surface-variant mt-2">South Jakarta Corporate District</p>
+<button class="mt-4 text-primary font-bold text-sm underline">Open in Maps</button>
+</div>
+</div>
+<div class="w-full h-full" data-location="Jakarta, Indonesia" style=""></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter Bubble -->
+<section class="mt-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="bg-primary-container rounded-xl p-12 text-center text-on-primary-container relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20"></div>
+<div class="absolute bottom-0 left-0 w-32 h-32 bg-white/10 rounded-full -ml-10 -mb-10"></div>
+<h2 class="font-headline-lg text-headline-lg mb-4">Stay in the Bubble</h2>
+<p class="font-body-lg text-body-lg mb-8 max-w-xl mx-auto opacity-90">Get the latest parenting tips and exclusive product releases delivered to your inbox.</p>
+<div class="flex flex-col md:flex-row gap-4 max-w-md mx-auto">
+<input class="flex-1 px-8 py-4 rounded-full border-none text-on-surface focus:ring-4 ring-white/20" placeholder="Your email address" type="email"/>
+<button class="bg-white text-primary font-bold px-8 py-4 rounded-full shadow-lg hover:bg-surface transition-all">Subscribe</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-highest w-full py-16 px-margin-mobile md:px-margin-desktop flex flex-col items-center gap-8 rounded-t-lg">
+<div class="max-w-container-max w-full grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-1 flex flex-col gap-4">
+<span class="font-headline-lg text-headline-lg text-primary">Loluna</span>
+<p class="text-on-surface-variant font-label-md">Gentle skincare solutions for your little ones, backed by dermatological research and nature's finest ingredients.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-primary">Company</h4>
+<div class="flex flex-col gap-2">
+<a class="text-on-surface-variant hover:text-secondary transition-colors text-label-md" href="about.html">Company Profile</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors text-label-md" href="#">Founder Story</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors text-label-md" href="#">CSR</a>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-primary">Support</h4>
+<div class="flex flex-col gap-2">
+<a class="text-on-surface-variant hover:text-secondary transition-colors text-label-md" href="#">Store Locator</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors text-label-md" href="#">Shipping Policy</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors text-label-md" href="#">FAQs</a>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-primary">Science</h4>
+<div class="flex flex-col gap-2">
+<a class="text-on-surface-variant hover:text-secondary transition-colors text-label-md" href="#">Ingredients</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors text-label-md" href="#">Technology</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors text-label-md" href="#">Safety Standards</a>
+</div>
+</div>
+</div>
+<div class="w-full border-t border-outline-variant/30 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-on-surface-variant text-label-md opacity-90">© 2024 Loluna Premium Baby Skincare. Gentle by Nature, Proven by Science.</p>
+<div class="flex gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+<!-- FAB for quick contact -->
+<div class="fixed bottom-8 right-8 z-[100] md:hidden">
+<button class="w-16 h-16 bg-secondary-container text-on-secondary-container rounded-full shadow-2xl flex items-center justify-center animate-bounce">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+</button>
+</div>
+<script>
+        // Smooth input interactions
+        document.querySelectorAll('.input-pill').forEach(input => {
+            input.addEventListener('focus', () => {
+                input.parentElement.querySelector('label')?.classList.add('text-primary');
+            });
+            input.addEventListener('blur', () => {
+                input.parentElement.querySelector('label')?.classList.remove('text-primary');
+            });
+        });
+
+        // Form Submission Simulation
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const originalText = btn.innerHTML;
+            
+            btn.disabled = true;
+            btn.innerHTML = '<span class="material-symbols-outlined animate-spin">sync</span> Sending...';
+            
+            setTimeout(() => {
+                btn.innerHTML = '<span class="material-symbols-outlined">check_circle</span> Sent Successfully!';
+                btn.classList.replace('bg-primary-container', 'bg-secondary-container');
+                e.target.reset();
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                    btn.classList.replace('bg-secondary-container', 'bg-primary-container');
+                }, 3000);
+            }, 1500);
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-md', 'h-16');
+                nav.classList.remove('h-20');
+            } else {
+                nav.classList.remove('shadow-md', 'h-16');
+                nav.classList.add('h-20');
+            }
+        });
+    </script>
+</body>
+</html>

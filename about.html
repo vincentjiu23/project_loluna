@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Company Profile | Loluna Premium Baby Skincare</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        .bubble-float {
+            animation: floating 6s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .text-gradient-primary {
+            background: linear-gradient(135deg, #006781 0%, #2cc1ed 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#fed800",
+                        "on-tertiary-fixed-variant": "#3f484d",
+                        "surface-dim": "#dbd9d9",
+                        "on-primary-fixed-variant": "#004d62",
+                        "secondary-fixed": "#ffe165",
+                        "tertiary-fixed-dim": "#bfc8ce",
+                        "surface": "#fbf9f8",
+                        "on-secondary-container": "#705e00",
+                        "surface-container-high": "#eae8e7",
+                        "on-background": "#1b1c1c",
+                        "primary-fixed-dim": "#58d5ff",
+                        "secondary-fixed-dim": "#e7c400",
+                        "on-error": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#001f29",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#bcc8cf",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#f2f0f0",
+                        "on-primary-container": "#004b5f",
+                        "background": "#fbf9f8",
+                        "inverse-primary": "#58d5ff",
+                        "surface-bright": "#fbf9f8",
+                        "tertiary": "#576065",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#2cc1ed",
+                        "outline": "#6d797f",
+                        "surface-container-highest": "#e4e2e2",
+                        "primary-fixed": "#b9eaff",
+                        "tertiary-container": "#abb4ba",
+                        "on-tertiary-container": "#3d464b",
+                        "on-secondary-fixed": "#221b00",
+                        "on-secondary-fixed-variant": "#544600",
+                        "on-surface-variant": "#3d494e",
+                        "surface-variant": "#e4e2e2",
+                        "primary": "#006781",
+                        "on-error-container": "#93000a",
+                        "on-primary": "#ffffff",
+                        "surface-container-low": "#f5f3f3",
+                        "on-surface": "#1b1c1c",
+                        "on-tertiary-fixed": "#141d21",
+                        "error-container": "#ffdad6",
+                        "surface-container": "#efeded",
+                        "secondary": "#6f5d00",
+                        "inverse-surface": "#303030",
+                        "tertiary-fixed": "#dbe4ea",
+                        "surface-tint": "#006781"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "40px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "unit": "8px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-xl": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md">
+<!-- Top Navigation -->
+<header class="bg-surface/80 dark:bg-surface-container-low/80 backdrop-blur-md fixed w-full top-0 z-50 border-b border-outline-variant/30 shadow-sm transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex items-center gap-8">
+<a class="font-headline-lg text-headline-lg text-primary dark:text-primary-fixed-dim tracking-tight" href="index.html">Loluna</a>
+<nav class="hidden md:flex gap-6">
+<a class="text-primary dark:text-primary-fixed-dim font-bold border-b-2 border-primary font-body-md text-body-md hover:text-primary transition-colors" href="about.html">About Us</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-fixed-variant font-body-md text-body-md hover:text-primary transition-colors" href="products.html">Products</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-fixed-variant font-body-md text-body-md hover:text-primary transition-colors" href="#">Articles</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-fixed-variant font-body-md text-body-md hover:text-primary transition-colors" href="contact.html">Contact Us</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden md:flex items-center bg-surface-container-low px-4 py-2 rounded-full border border-outline-variant/50">
+<span class="material-symbols-outlined text-on-surface-variant text-sm mr-2">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-32" placeholder="Search..." type="text"/>
+</div>
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">shopping_basket</span>
+</button>
+<img class="w-10 h-10 rounded-full border-2 border-primary-container object-cover" data-alt="A close-up, high-quality portrait of a smiling young mother with soft, glowing skin, looking warmly into the camera. The background is a soft, blurred nursery with pastel blue and yellow tones, reflecting the Loluna brand aesthetic. The lighting is natural, bright, and airy, emphasizing a sense of maternal care and professional trust." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwTx3qNGvVR8GMfH2RkVMnODE42PLOvIylRgROo6l-tafsxKlcOtkx1XozTcvUZKstXO8xUg11XTnFgRr-xrm5OMH3skMwMbPJ7BfVW__o6waKngxhfSqekJOw5-0kNb4mzr6J7YiwTeoyC7C1vZt8_hruR9H1tuUjjsvrImePD09AJL3fvajSbiIy8W-TQmr8eJMXvY3OSs643Npn4F-IJ-uMxAeJ9_4mvOKcfzwT4KpDxOFxgLNP45-fg8OHqwNCD5k9gKuQnus"/>
+</div>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative overflow-hidden py-24 md:py-32">
+
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md">Created by Parent to Parent</span>
+<h1 class="font-headline-xl text-headline-xl text-primary leading-tight">Trusted by 3 Million Moms for Gentle, Safe Care.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                            Loluna was born from a simple promise: to provide every baby with the purest skincare possible. Our journey began in a kitchen, driven by a parent's love and perfected by clinical science.
+                        </p>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform shadow-lg shadow-primary/20">Our Story</button>
+<button class="bg-surface-container-highest text-primary px-8 py-4 rounded-full font-bold hover:bg-surface-container-high transition-colors">Explore Science</button>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-secondary-fixed/20 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-primary-fixed/30 rounded-full blur-3xl"></div>
+<div class="relative glass-card p-4 rounded-xl rotate-3 bubble-float">
+<img class="rounded-lg w-full aspect-[4/5] object-cover shadow-2xl" data-alt="A beautiful, high-resolution photo of a mother gently cradling her newborn baby. They are both bathed in soft, warm morning sunlight coming through a large window. The baby has smooth, healthy-looking skin, and the mother has an expression of pure love and tranquility. The scene is styled with soft linens in white and light sky blue, creating a premium and safe atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvzsB1_7Cl44Hl9syNeaLEQKl_xLUD55iykTgHF8sGmxN-9bXzDoY1Vo0zum1-hGcb05rm-sCK2NbW0n2rc9rtCnx-S0YoeXPJUYLgksZ-hsSbRHuO1MlKp-X0Pmjpz4TwNYOgWX23w5-YrkoYJDpYS7J5cqVUtPpctReKsGksFkSuox2OezfHnvRBWp4cjuWLttIQxHqIBEwGLyPdmaOoYoBbR-FftGR5M7iEcmt4MOcrsvxfTzdlVILNI05RbUDxheBdNrqLDK8"/>
+</div>
+<!-- Floating Stats Chip -->
+<div class="absolute bottom-10 -right-8 glass-card p-6 rounded-lg shadow-xl border border-white/50 animate-bounce transition-all">
+<div class="flex items-center gap-3">
+<div class="bg-secondary-container p-2 rounded-full">
+<span class="material-symbols-outlined text-on-secondary-container" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<div>
+<p class="text-2xl font-bold text-primary">3M+</p>
+<p class="text-xs font-label-md uppercase tracking-wider">Happy Moms</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Vision (Bento Grid) -->
+<section class="py-24 bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16 space-y-4">
+<h2 class="font-headline-lg text-headline-lg text-primary">The Loluna Foundation</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Founded on the principles of transparency, clinical safety, and the emotional connection between parent and child.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Large Card -->
+<div class="md:col-span-2 relative group overflow-hidden rounded-lg bg-primary-container/10 p-12 flex flex-col justify-end min-h-[400px]">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+<div class="relative z-10 space-y-4">
+<span class="text-primary font-bold tracking-widest uppercase text-xs">Our Heritage</span>
+<h3 class="text-3xl font-bold text-primary">The "Parent-First" Philosophy</h3>
+<p class="text-on-surface-variant max-w-md">Every formula we create is tested first on our own children. If it isn't good enough for our family, it isn't good enough for yours.</p>
+</div>
+<div class="absolute top-12 right-12 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[120px]">family_restroom</span>
+</div>
+</div>
+<!-- Small Card 1 -->
+<div class="glass-card p-8 rounded-lg border-2 border-secondary-container/30 flex flex-col items-center text-center space-y-6">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl">verified_user</span>
+</div>
+<h3 class="text-xl font-bold text-primary">Clinical Purity</h3>
+<p class="text-sm text-on-surface-variant">Hypoallergenic and dermatologically tested to the highest international standards.</p>
+</div>
+<!-- Small Card 2 -->
+<div class="glass-card p-8 rounded-lg bg-primary-fixed/10 border-2 border-primary-container/20 flex flex-col items-center text-center space-y-6">
+<div class="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container text-3xl" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<h3 class="text-xl font-bold text-primary">Nature's Essence</h3>
+<p class="text-sm text-on-surface-variant">98% plant-based ingredients sourced from sustainable, organic farms across the globe.</p>
+</div>
+<!-- Medium Card -->
+<div class="md:col-span-2 bg-on-surface text-surface rounded-lg p-12 relative overflow-hidden group">
+<div class="relative z-10 flex flex-col md:flex-row gap-12 items-center">
+<div class="space-y-4">
+<h3 class="text-2xl font-bold text-secondary-fixed">3 Million Moms Can't Be Wrong</h3>
+<p class="text-surface/70">From our first tube of moisturizing cream to becoming a household name, our growth is fueled by real recommendations from one parent to another.</p>
+<a class="inline-flex items-center gap-2 text-secondary-fixed font-bold hover:underline" href="#">Read Community Stories <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+<div class="flex -space-x-4">
+<img class="w-16 h-16 rounded-full border-4 border-on-surface object-cover" data-alt="Close up of a happy baby laughing while being bathed with gentle bubbles. The lighting is soft and bright, using a clean bathroom setting with hints of premium wood and soft blue towels. The focus is on the baby's joy and healthy skin." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm-A1YfhJCev-WgzbZ06_8DyHCmch8Cy8UZ20ArrQtlct11eKdshQmYMKNZ8S4surOJSQi9NWV-CCI0SJWTakzM_VSQBQShGgIf0mi8a_H_klVSYdf0uO8WTQidOnBh13yQ4WdPcxjbxJQFAjzGNaWXUdTjPv9qL618Tx6N8r8agbTjCMUuPQ4M0pbOvivU3hYtrGGaouaIFVCDIn4LUEJpZu4ybNTZh7N-iCIieEBu9BTUFW--aWdI_ted8GunIIZXXFmSxrSFCw"/>
+<img class="w-16 h-16 rounded-full border-4 border-on-surface object-cover" data-alt="A young father smiling while applying lotion to his toddler's arm. Both are sitting on a plush white rug in a sun-drenched living room. The aesthetic is clean, modern, and warm, featuring soft textures and a joyful family atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtrJgAgc4I6sVH-oMlCrN_AldSkFO2BfhfQA8bhVR5zWg2guvGcxwH_2ee7JZ8Zr2GCs2Zn7_QnjOLmfKMAI1JXwC3avDV0JnDRq9zkyJAC0PSp3KVF5ILHOAQ9IBCPW2_0847qKDpnjiXxg9VUvQG7dClcWtqMleuwSoqH4dWFDaUl87gumbChR0sa7Dd4QqWcg9WVCACFC-MFchqZilWGtAnspxK4LlD7bl0McJvvk9i8iEqVcCo_HlkWY0jhVIlU0tB7N47WEc"/>
+<img class="w-16 h-16 rounded-full border-4 border-on-surface object-cover" data-alt="A portrait of a mother holding her baby close, both looking peaceful and secure. They are surrounded by soft, pastel-colored blankets. The image conveys ultimate trust and the premium quality of baby skincare products." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXtsn6ouEL7lqhvUJ9PnjoQRFFxuOllAy0JOKrPwgB4wYV_Gp_RZADnFmylmC7SNu6txE1QvnezHd4Ld06GNvCAd4cLAPGyasnM9Wfn6eKjKS9xFR_3cQjcqfElCSzlwHWQDNjJIxvaKsoQcDx2KxFSHfKk8JEif7ciKqMYsK1ZwAaLxIjeidEN4rS7a2YQDteiMFCeEMtyfOJ3h-JiMxDDX4CvUoPXXOdEaTcm0gOJUDOElAHOepVLVk93CVO6vdr0R4bbeL4HxQ"/>
+<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center border-4 border-on-surface text-xs font-bold">+3M</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Founder Story -->
+<section class="py-24 relative">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row gap-16 items-center">
+<div class="w-full md:w-1/2">
+<div class="relative rounded-lg overflow-hidden aspect-square shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="A professional yet warm portrait of a woman in her late 30s, the founder of Loluna, standing in a bright, modern laboratory setting. She is wearing a soft blue blazer over a white shirt, blending a professional scientist look with a friendly, parental vibe. She is holding a small, elegantly designed baby cream bottle. The lighting is clean and high-key." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7KDMKttFUaEl-CbqEWBDiAJJy0SsHcCvnBrxLMQ_uA7D2chcWZaThnxq2wgRPCfHdC6JbuRK5M12604CmFHNHSDnVo-wRFH-3uB82M0VeFxjkqtWl-Vjq4ynbssHzsfMdF6uZCGJHFklByfvyxUSuHK4diwpHJboBu7PrgVeIioiNa3bhhGSEzhsD8Yv2F5pw5oFaprGlPFqlA9-9p5cLdSnyfTDYsx5EX6gacAVtkIiIZnz7L7qz4lG7i63pb02aYOCEVqoKgac"/>
+<div class="absolute bottom-8 left-8 bg-white/90 backdrop-blur-md p-6 rounded-lg max-w-xs shadow-lg">
+<p class="text-primary font-bold italic">"We created Loluna because we wanted a world where parents never have to choose between science and safety."</p>
+<p class="mt-4 font-bold text-sm">— Dr. Elena Rossi, Founder &amp; Mom</p>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 space-y-8">
+<h2 class="font-headline-lg text-headline-lg text-primary">Born from Necessity.</h2>
+<div class="space-y-6 text-on-surface-variant font-body-md">
+<p>When our daughter was born with extremely sensitive skin, we scoured every shelf for products that were truly safe, effective, and sustainable. We found that most products were either too clinical and harsh, or too organic and ineffective.</p>
+<p>As a researcher and a mother, I knew there had to be a better way. I spent two years collaborating with world-class pediatric dermatologists to bridge that gap. The result was Loluna—a brand that treats your baby's skin with the same reverence and care we give our own.</p>
+</div>
+<div class="grid grid-cols-2 gap-8 pt-8 border-t border-outline-variant">
+<div>
+<p class="text-3xl font-bold text-primary">2018</p>
+<p class="text-sm font-label-md text-on-surface-variant">Founded in Jakarta</p>
+</div>
+<div>
+<p class="text-3xl font-bold text-primary">15+</p>
+<p class="text-sm font-label-md text-on-surface-variant">Global Awards</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-20">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="bg-primary-container/20 rounded-lg p-12 md:p-24 text-center space-y-8 relative overflow-hidden">
+<div class="absolute -top-24 -left-24 w-64 h-64 bg-secondary-container/30 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-24 -right-24 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
+<h2 class="font-headline-xl text-headline-xl text-primary relative z-10">Start Your Gentle Journey.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto relative z-10">Join the millions of parents who trust Loluna for their baby's daily skincare routine. Experience the difference of premium, science-backed care.</p>
+<div class="flex justify-center gap-4 relative z-10">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-full font-bold hover:shadow-xl transition-all hover:-translate-y-1">Shop Best Sellers</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-highest w-full py-16 px-margin-mobile md:px-margin-desktop flex flex-col items-center gap-8 border-t border-outline-variant/10">
+<div class="max-w-container-max w-full grid grid-cols-1 md:grid-cols-4 gap-12 text-center md:text-left">
+<div class="space-y-4">
+<a class="font-headline-lg text-headline-lg text-primary" href="#">Loluna</a>
+<p class="text-on-surface-variant font-label-md">Gentle by Nature,<br/>Proven by Science.</p>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-primary">Company</h4>
+<ul class="space-y-2">
+<li><a class="text-primary font-bold underline font-label-md text-label-md" href="#">Company Profile</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md" href="#">Founder Story</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md" href="#">CSR</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-primary">Explore</h4>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md" href="#">Ingredients</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md" href="#">Technology</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md" href="#">Store Locator</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-primary">Newsletter</h4>
+<p class="text-xs text-on-surface-variant">Join our family for exclusive offers.</p>
+<div class="flex">
+<input class="bg-surface border-outline-variant rounded-l-full px-4 py-2 w-full text-sm focus:ring-primary focus:border-primary" placeholder="Your Email" type="email"/>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-r-full">
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="w-full pt-8 border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-on-surface-variant font-label-md text-label-md">© 2024 Loluna Premium Baby Skincare. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">language</span></a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+</div>
+</div>
+</footer>
+<!-- Interactive Micro-interactions -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const header = document.querySelector('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 20) {
+                    header.classList.add('py-2', 'bg-surface/95');
+                    header.classList.remove('h-20');
+                } else {
+                    header.classList.remove('py-2', 'bg-surface/95');
+                    header.classList.add('h-20');
+                }
+            });
+
+            // Intersection Observer for scroll animations
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>

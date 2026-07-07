@@ -43,7 +43,7 @@ export default function Home() {
               <div className="glass-card p-4 rounded-2xl rotate-2 shadow-2xl relative z-10 animate-float">
                 <img
                   className="rounded-xl w-full aspect-[4/3] object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvzsB1_7Cl44Hl9syNeaLEQKl_xLUD55iykTgHF8sGmxN-9bXzDoY1Vo0zum1-hGcb05rm-sCK2NbW0n2rc9rtCnx-S0YoeXPJUYLgksZ-hsSbRHuO1MlKp-X0Pmjpz4TwNYOgWX23w5-YrkoYJDpYS7J5cqVUtPpctReKsGksFkSuox2OezfHnvRBWp4cjuWLttIQxHqIBEwGLyPdmaOoYoBbR-FftGR5M7iEcmt4MOcrsvxfTzdlVILNI05RbUDxheBdNrqLDK8"
+                  src="/images/Section 1/Section 1_Making Everyday.png"
                   alt="Parents with baby"
                 />
               </div>
@@ -96,7 +96,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-secondary-container/20 rounded-full blur-3xl animate-pulse-slow"></div>
                 <img
                   className="relative z-10 w-full object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
-                  src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=1000&auto=format&fit=crop"
+                  src="/images/Section 3/Section 3_FBL 1.png"
                   alt="Face & Body Baby Lotion"
                 />
                 <div className="absolute bottom-8 right-8 bg-secondary-container text-on-secondary-container p-6 rounded-full w-32 h-32 flex flex-col items-center justify-center shadow-xl rotate-12 z-20 animate-float">
@@ -167,7 +167,7 @@ export default function Home() {
             <ScrollReveal delay={0.1}>
               <div className="relative rounded-3xl overflow-hidden group h-[400px] shadow-xl">
                 <img
-                  src="https://images.unsplash.com/photo-1579154204601-e1588bc92458?q=80&w=1000&auto=format&fit=crop"
+                  src="/images/Section 4/Section 4_Formulated Australia.png"
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   alt="Lab"
                 />
@@ -182,7 +182,7 @@ export default function Home() {
             <ScrollReveal delay={0.2}>
               <div className="relative rounded-3xl overflow-hidden group h-[400px] shadow-xl">
                 <img
-                  src="https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?q=80&w=1000&auto=format&fit=crop"
+                  src="/images/Section 4/Section 4_Scientist.png"
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   alt="Tech"
                 />

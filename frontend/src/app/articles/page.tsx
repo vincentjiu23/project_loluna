@@ -10,7 +10,7 @@ export default function Articles() {
       excerpt: "A deep dive into the anatomy of newborn skin and why it loses moisture up to 5 times faster than adult skin.",
       category: "Science & Education",
       date: "Oct 12, 2024",
-      image: "https://images.unsplash.com/photo-1544126592-807ade215a0b?q=80&w=600&auto=format&fit=crop"
+      image: "/images/Section 4/Section 4_Scientist.png"
     },
     {
       id: "2",
@@ -18,7 +18,7 @@ export default function Articles() {
       excerpt: "What are ceramides, and why did our clinical team choose a 5-complex blend for our signature lotion?",
       category: "Product Spotlight",
       date: "Oct 05, 2024",
-      image: "https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=600&auto=format&fit=crop"
+      image: "/images/Section 4/Section 4_Formulated Australia.png"
     },
     {
       id: "3",
@@ -26,7 +26,7 @@ export default function Articles() {
       excerpt: "Pediatricians share their top tips for using bath time and massage to help your baby sleep through the night.",
       category: "Parenting Tips",
       date: "Sep 28, 2024",
-      image: "https://images.unsplash.com/photo-1519689680058-324335c77eba?q=80&w=600&auto=format&fit=crop"
+      image: "/images/Background/Background.jpg"
     },
     {
       id: "4",
@@ -34,7 +34,7 @@ export default function Articles() {
       excerpt: "How to spot the early signs of eczema and the best gentle ingredients to soothe flare-ups naturally.",
       category: "Science & Education",
       date: "Sep 15, 2024",
-      image: "https://images.unsplash.com/photo-1522771930-78848d9293e8?q=80&w=600&auto=format&fit=crop"
+      image: "/images/Section 4/Section 4_Scientist.png"
     },
     {
       id: "5",
@@ -42,7 +42,7 @@ export default function Articles() {
       excerpt: "Read about our commitment to reducing plastic waste and ensuring our ingredients are ethically sourced.",
       category: "Behind the Brand",
       date: "Sep 02, 2024",
-      image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=600&auto=format&fit=crop"
+      image: "/images/Section 4/Section 4_Formulated Australia.png"
     },
     {
       id: "6",
@@ -50,7 +50,7 @@ export default function Articles() {
       excerpt: "When is it safe to use sunscreen on your baby? A comprehensive guide for summer safety.",
       category: "Parenting Tips",
       date: "Aug 20, 2024",
-      image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600&auto=format&fit=crop"
+      image: "/images/Background/Background.jpg"
     }
   ];
 
@@ -82,7 +82,7 @@ export default function Articles() {
             <div className="flex flex-col md:flex-row">
               <div className="md:w-3/5 relative overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1544126592-807ade215a0b?q=80&w=1200&auto=format&fit=crop" 
+                  src="/images/Section 4/Section 4_Scientist.png" 
                   alt="Featured Article" 
                   className="w-full h-full object-cover min-h-[400px] group-hover:scale-105 transition-transform duration-700"
                 />

@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-surface-container-lowest w-full py-16 px-margin-mobile md:px-margin-desktop flex flex-col items-center gap-8">
       <div className="max-w-container-max w-full grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="col-span-1 flex flex-col gap-4">
-          <span className="font-headline-lg text-headline-lg text-primary">Loluna</span>
+          <img src="/images/Navigation/Logo.png" alt="Loluna Logo" className="h-10 object-contain object-left max-w-fit" />
           <p className="text-on-surface-variant font-label-md">
             Premium Baby Skincare. Gentle by Nature, Proven by Science.
           </p>

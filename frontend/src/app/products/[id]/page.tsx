@@ -34,7 +34,7 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
               <div className="bg-surface-container-lowest border border-outline-variant/30 rounded-3xl p-8 aspect-square flex items-center justify-center relative overflow-hidden shadow-lg group">
                 <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <img 
-                  src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=800&auto=format&fit=crop" 
+                  src="/images/Section 3/Section 3_FBL 1.png" 
                   alt="Product Image" 
                   className="w-full h-full object-contain drop-shadow-2xl transition-transform duration-700 group-hover:scale-110"
                 />
@@ -48,7 +48,7 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
                 {[1, 2, 3, 4].map((i) => (
                   <div key={i} className={`bg-surface-container-lowest border rounded-2xl p-2 aspect-square flex items-center justify-center cursor-pointer transition-all hover:-translate-y-1 shadow-sm ${i === 1 ? 'border-primary ring-2 ring-primary/20' : 'border-outline-variant/30 opacity-70 hover:opacity-100'}`}>
                     <img 
-                      src={`https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=200&auto=format&fit=crop`}
+                      src={`https://drive.google.com/uc?export=view&id=${i % 2 === 0 ? '1ZDIQBbIIB1KEDjgKd4qjgnlkjuTa-Fe7' : '1KKD-sR8locv8yJ3niN14-Xn8PdG2ei81'}`}
                       alt="Thumbnail"
                       className="w-full h-full object-contain"
                     />

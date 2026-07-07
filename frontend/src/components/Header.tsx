@@ -22,8 +22,8 @@ export default function Header() {
     >
       <div className="flex justify-between items-center h-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
         <div className="flex items-center gap-8">
-          <Link href="/" className="font-headline-lg text-headline-lg text-primary tracking-tight">
-            Loluna
+          <Link href="/" className="flex items-center">
+            <img src="/images/Navigation/Logo.png" alt="Loluna Logo" className="h-8 md:h-10 object-contain" />
           </Link>
           <nav className="hidden md:flex gap-6">
             <Link href="/about" className="text-on-surface-variant font-body-md hover:text-primary transition-colors">

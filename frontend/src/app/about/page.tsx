@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import Button from "@/components/Button";
+import StackedReviews from "@/components/StackedReviews";
 
 export default function About() {
   return (
@@ -38,8 +39,8 @@ export default function About() {
                 <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-primary-fixed/30 rounded-full blur-3xl animate-blob" style={{ animationDelay: '2s' }}></div>
                 <div className="relative glass-panel p-4 rounded-xl rotate-3 shadow-2xl animate-float">
                   <img
-                    className="rounded-lg w-full aspect-[4/5] object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvzsB1_7Cl44Hl9syNeaLEQKl_xLUD55iykTgHF8sGmxN-9bXzDoY1Vo0zum1-hGcb05rm-sCK2NbW0n2rc9rtCnx-S0YoeXPJUYLgksZ-hsSbRHuO1MlKp-X0Pmjpz4TwNYOgWX23w5-YrkoYJDpYS7J5cqVUtPpctReKsGksFkSuox2OezfHnvRBWp4cjuWLttIQxHqIBEwGLyPdmaOoYoBbR-FftGR5M7iEcmt4MOcrsvxfTzdlVILNI05RbUDxheBdNrqLDK8"
+                    className="rounded-lg w-full aspect-[4/5] object-cover object-left"
+                    src="/images/Section 2/Section 2_Baby.png"
                     alt="Mother with newborn"
                   />
                 </div>
@@ -126,7 +127,7 @@ export default function About() {
               <div className="bg-primary text-on-primary rounded-3xl p-12 relative overflow-hidden group shadow-xl h-full">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl"></div>
                 <div className="relative z-10 flex flex-col md:flex-row gap-12 items-center h-full">
-                  <div className="space-y-6 md:w-2/3">
+                  <div className="space-y-6 flex-1">
                     <h3 className="text-3xl font-bold text-secondary-fixed">3 Million Moms Can't Be Wrong</h3>
                     <p className="text-white/80 text-lg">
                       From our first tube of moisturizing cream to becoming a household name, our growth is fueled by real recommendations from one parent to another.
@@ -135,11 +136,8 @@ export default function About() {
                       Read Community Stories <span className="material-symbols-outlined">arrow_forward</span>
                     </Link>
                   </div>
-                  <div className="flex -space-x-4 md:w-1/3 justify-end pr-4">
-                    <img className="w-20 h-20 rounded-full border-4 border-primary object-cover shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm-A1YfhJCev-WgzbZ06_8DyHCmch8Cy8UZ20ArrQtlct11eKdshQmYMKNZ8S4surOJSQi9NWV-CCI0SJWTakzM_VSQBQShGgIf0mi8a_H_klVSYdf0uO8WTQidOnBh13yQ4WdPcxjbxJQFAjzGNaWXUdTjPv9qL618Tx6N8r8agbTjCMUuPQ4M0pbOvivU3hYtrGGaouaIFVCDIn4LUEJpZu4ybNTZh7N-iCIieEBu9BTUFW--aWdI_ted8GunIIZXXFmSxrSFCw" alt="Community member" />
-                    <img className="w-20 h-20 rounded-full border-4 border-primary object-cover shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtrJgAgc4I6sVH-oMlCrN_AldSkFO2BfhfQA8bhVR5zWg2guvGcxwH_2ee7JZ8Zr2GCs2Zn7_QnjOLmfKMAI1JXwC3avDV0JnDRq9zkyJAC0PSp3KVF5ILHOAQ9IBCPW2_0847qKDpnjiXxg9VUvQG7dClcWtqMleuwSoqH4dWFDaUl87gumbChR0sa7Dd4QqWcg9WVCACFC-MFchqZilWGtAnspxK4LlD7bl0McJvvk9i8iEqVcCo_HlkWY0jhVIlU0tB7N47WEc" alt="Community member" />
-                    <img className="w-20 h-20 rounded-full border-4 border-primary object-cover shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXtsn6ouEL7lqhvUJ9PnjoQRFFxuOllAy0JOKrPwgB4wYV_Gp_RZADnFmylmC7SNu6txE1QvnezHd4Ld06GNvCAd4cLAPGyasnM9Wfn6eKjKS9xFR_3cQjcqfElCSzlwHWQDNjJIxvaKsoQcDx2KxFSHfKk8JEif7ciKqMYsK1ZwAaLxIjeidEN4rS7a2YQDteiMFCeEMtyfOJ3h-JiMxDDX4CvUoPXXOdEaTcm0gOJUDOElAHOepVLVk93CVO6vdr0R4bbeL4HxQ" alt="Community member" />
-                    <div className="w-20 h-20 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center border-4 border-primary text-sm font-bold shadow-lg z-10">+3M</div>
+                  <div className="flex justify-end shrink-0 mt-10 md:mt-0 xl:pl-10">
+                    <StackedReviews />
                   </div>
                 </div>
               </div>
@@ -155,7 +153,7 @@ export default function About() {
             <div className="w-full md:w-1/2">
               <ScrollReveal direction="right">
                 <div className="relative rounded-3xl overflow-hidden aspect-square shadow-2xl">
-                  <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7KDMKttFUaEl-CbqEWBDiAJJy0SsHcCvnBrxLMQ_uA7D2chcWZaThnxq2wgRPCfHdC6JbuRK5M12604CmFHNHSDnVo-wRFH-3uB82M0VeFxjkqtWl-Vjq4ynbssHzsfMdF6uZCGJHFklByfvyxUSuHK4diwpHJboBu7PrgVeIioiNa3bhhGSEzhsD8Yv2F5pw5oFaprGlPFqlA9-9p5cLdSnyfTDYsx5EX6gacAVtkIiIZnz7L7qz4lG7i63pb02aYOCEVqoKgac" alt="Founder" />
+                  <img className="w-full h-full object-contain bg-surface-container-low" src="/images/Section 6/Section 6_Created by Parent.png" alt="Founder" />
                   <div className="absolute bottom-8 left-8 glass-panel p-8 rounded-2xl max-w-sm shadow-xl">
                     <p className="text-primary font-bold italic text-lg leading-relaxed">
                       "We created Loluna because we wanted a world where parents never have to choose between science and safety."

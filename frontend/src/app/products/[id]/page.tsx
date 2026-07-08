@@ -4,8 +4,11 @@ import { useState } from "react";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import Button from "@/components/Button";
+import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from "@/context/LanguageContext";
 
 export default function ProductDetail({ params }: { params: { id: string } }) {
+  const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState("description");
   const [quantity, setQuantity] = useState(1);
 
@@ -15,9 +18,9 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
       <div className="bg-surface-container-low border-b border-surface-container py-4">
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
           <nav className="flex text-sm text-on-surface-variant gap-2 items-center font-label-md">
-            <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+            <Link href="/" className="hover:text-primary transition-colors">{t("productDetail.breadcrumbs.home")}</Link>
             <span className="material-symbols-outlined text-sm">chevron_right</span>
-            <Link href="/products" className="hover:text-primary transition-colors">Products</Link>
+            <Link href="/products" className="hover:text-primary transition-colors">{t("productDetail.breadcrumbs.products")}</Link>
             <span className="material-symbols-outlined text-sm">chevron_right</span>
             <span className="text-primary font-bold">Face & Body Baby Lotion</span>
           </nav>
@@ -39,23 +42,11 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
                   className="w-full h-full object-contain drop-shadow-2xl transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute top-6 left-6 bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide shadow-md">
-                  Best Seller
+                  {t("productDetail.badge")}
                 </div>
               </div>
             </ScrollReveal>
-            <ScrollReveal delay={0.2} direction="up">
-              <div className="grid grid-cols-4 gap-4">
-                {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className={`bg-surface-container-lowest border rounded-2xl p-2 aspect-square flex items-center justify-center cursor-pointer transition-all hover:-translate-y-1 shadow-sm ${i === 1 ? 'border-primary ring-2 ring-primary/20' : 'border-outline-variant/30 opacity-70 hover:opacity-100'}`}>
-                    <img 
-                      src={`https://drive.google.com/uc?export=view&id=${i % 2 === 0 ? '1ZDIQBbIIB1KEDjgKd4qjgnlkjuTa-Fe7' : '1KKD-sR8locv8yJ3niN14-Xn8PdG2ei81'}`}
-                      alt="Thumbnail"
-                      className="w-full h-full object-contain"
-                    />
-                  </div>
-                ))}
-              </div>
-            </ScrollReveal>
+
           </div>
 
           {/* Product Info */}
@@ -69,62 +60,53 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
                   <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                   <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star_half</span>
                 </div>
-                <a href="#reviews" className="text-sm font-bold text-primary hover:underline">(128 Reviews)</a>
+                <a href="#reviews" className="text-sm font-bold text-primary hover:underline">({t("productDetail.reviews")})</a>
               </div>
             </ScrollReveal>
 
             <ScrollReveal delay={0.2}>
               <h1 className="font-headline-lg text-4xl text-primary leading-tight mb-2">Face & Body Baby Lotion</h1>
-              <p className="text-lg text-on-surface-variant mb-6 font-body-lg">with 5X Ceramide & Natural Shea Butter</p>
+              <p className="text-lg text-on-surface-variant mb-6 font-body-lg">{t("productDetail.subtitle")}</p>
             </ScrollReveal>
 
-            <ScrollReveal delay={0.3}>
-              <div className="text-4xl font-bold text-primary-container mb-8 drop-shadow-sm">$18.50</div>
-            </ScrollReveal>
+
 
             <ScrollReveal delay={0.4}>
               <div className="space-y-6 mb-10">
                 <p className="text-on-surface-variant leading-relaxed text-lg">
-                  Provide ultimate 24-hour protection for your little one. Our ultra-nourishing lotion absorbs instantly without any greasy residue, fortifying the natural skin barrier to prevent dryness and irritation.
+                  {t("productDetail.desc")}
                 </p>
                 <ul className="space-y-3 font-label-md text-on-surface-variant">
-                  <li className="flex items-center gap-3"><span className="material-symbols-outlined text-secondary-fixed">verified</span> Hypoallergenic & pH Balanced</li>
-                  <li className="flex items-center gap-3"><span className="material-symbols-outlined text-secondary-fixed">verified</span> Free from Parabens & Artificial Dyes</li>
-                  <li className="flex items-center gap-3"><span className="material-symbols-outlined text-secondary-fixed">verified</span> Cruelty-Free</li>
+                  <li className="flex items-center gap-3"><span className="material-symbols-outlined text-secondary-fixed">verified</span> {t("productDetail.bullets.hypoallergenic")}</li>
+                  <li className="flex items-center gap-3"><span className="material-symbols-outlined text-secondary-fixed">verified</span> {t("productDetail.bullets.freeFrom")}</li>
+                  <li className="flex items-center gap-3"><span className="material-symbols-outlined text-secondary-fixed">verified</span> {t("productDetail.bullets.crueltyFree")}</li>
                 </ul>
               </div>
             </ScrollReveal>
 
             {/* Action Area */}
             <ScrollReveal delay={0.5}>
-              <div className="mt-auto space-y-6 p-8 bg-primary-fixed/5 rounded-3xl border border-primary/10 shadow-sm">
-                <div className="flex items-center gap-6">
-                  <span className="font-bold text-on-surface">Quantity</span>
-                  <div className="flex items-center bg-white border border-outline-variant rounded-full overflow-hidden shadow-sm">
-                    <button 
-                      onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                      className="px-4 py-2 text-on-surface-variant hover:bg-surface-container transition-colors"
-                    >
-                      <span className="material-symbols-outlined text-sm">remove</span>
-                    </button>
-                    <span className="px-4 py-2 font-bold w-12 text-center text-primary">{quantity}</span>
-                    <button 
-                      onClick={() => setQuantity(quantity + 1)}
-                      className="px-4 py-2 text-on-surface-variant hover:bg-surface-container transition-colors"
-                    >
-                      <span className="material-symbols-outlined text-sm">add</span>
-                    </button>
-                  </div>
-                </div>
-
+              <div className="mt-12 space-y-6">
+                <h3 className="font-bold text-lg text-primary border-b border-outline-variant/30 pb-2">{t("productDetail.availableAt")}</h3>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button variant="primary" className="flex-grow !py-5 text-lg shadow-xl shadow-primary/20">
-                    <span className="material-symbols-outlined">shopping_cart</span>
-                    Add to Cart
-                  </Button>
-                  <Button variant="secondary" className="!px-6 !py-5 shadow-lg shadow-secondary-container/20">
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 0" }}>favorite</span>
-                  </Button>
+                  <Link href="/stores" className="flex-1">
+                    <Button variant="primary" className="w-full !py-4 text-md shadow-lg shadow-primary/20 flex items-center justify-center gap-2">
+                      <span className="material-symbols-outlined text-lg">storefront</span>
+                      {t("productDetail.offlineStores")}
+                    </Button>
+                  </Link>
+                  <a href="#" className="flex-1">
+                    <Button variant="outline" className="w-full !py-4 text-md flex items-center justify-center gap-2 hover:bg-orange-50 hover:text-orange-600 hover:border-orange-200 transition-colors">
+                      <span className="material-symbols-outlined text-lg">shopping_bag</span>
+                      Shopee
+                    </Button>
+                  </a>
+                  <a href="#" className="flex-1">
+                    <Button variant="outline" className="w-full !py-4 text-md flex items-center justify-center gap-2 hover:bg-green-50 hover:text-green-600 hover:border-green-200 transition-colors">
+                      <span className="material-symbols-outlined text-lg">shopping_bag</span>
+                      Tokopedia
+                    </Button>
+                  </a>
                 </div>
               </div>
             </ScrollReveal>
@@ -132,71 +114,145 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
         </div>
       </section>
 
-      {/* Tabs Section */}
-      <section className="bg-surface border-t border-b border-surface-container py-16 mt-16">
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+      {/* Interactive Tabs Section */}
+      <section className="bg-surface border-t border-b border-surface-container py-24 mt-20 overflow-hidden relative">
+        {/* Background decorations */}
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+          <div className="absolute -top-40 -right-40 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+          <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-secondary-container/20 rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
           <ScrollReveal>
-            <div className="flex gap-8 border-b border-outline-variant/30 mb-12 overflow-x-auto pb-4">
-              <button 
-                className={`font-headline-lg text-xl pb-4 px-2 whitespace-nowrap transition-all border-b-4 ${activeTab === 'description' ? 'border-primary text-primary' : 'border-transparent text-on-surface-variant hover:text-primary'}`}
-                onClick={() => setActiveTab('description')}
-              >
-                Description
-              </button>
-              <button 
-                className={`font-headline-lg text-xl pb-4 px-2 whitespace-nowrap transition-all border-b-4 ${activeTab === 'ingredients' ? 'border-primary text-primary' : 'border-transparent text-on-surface-variant hover:text-primary'}`}
-                onClick={() => setActiveTab('ingredients')}
-              >
-                Ingredients
-              </button>
-              <button 
-                className={`font-headline-lg text-xl pb-4 px-2 whitespace-nowrap transition-all border-b-4 ${activeTab === 'how-to' ? 'border-primary text-primary' : 'border-transparent text-on-surface-variant hover:text-primary'}`}
-                onClick={() => setActiveTab('how-to')}
-              >
-                How to Use
-              </button>
+            {/* Tab Navigation */}
+            <div className="flex justify-center gap-4 md:gap-8 border-b border-outline-variant/30 mb-16 overflow-x-auto pb-1 max-w-3xl mx-auto">
+              {[
+                { id: 'description', label: t("productDetail.tabs.description.title"), icon: 'auto_awesome' },
+                { id: 'ingredients', label: t("productDetail.tabs.ingredients.title"), icon: 'science' },
+                { id: 'how-to', label: t("productDetail.tabs.howto.title"), icon: 'touch_app' }
+              ].map((tab) => (
+                <button 
+                  key={tab.id}
+                  onClick={() => setActiveTab(tab.id)}
+                  className={`relative flex items-center gap-2 font-headline-lg text-lg md:text-xl pb-4 px-4 whitespace-nowrap transition-colors ${activeTab === tab.id ? 'text-primary' : 'text-on-surface-variant hover:text-primary'}`}
+                >
+                  <span className="material-symbols-outlined text-xl">{tab.icon}</span>
+                  {tab.label}
+                  {activeTab === tab.id && (
+                    <motion.div 
+                      layoutId="activeTabIndicator"
+                      className="absolute bottom-0 left-0 w-full h-1 rounded-t-full bg-primary"
+                    />
+                  )}
+                </button>
+              ))}
             </div>
 
-            <div className="max-w-4xl text-on-surface-variant leading-relaxed space-y-6 text-lg min-h-[300px]">
-              {activeTab === 'description' && (
-                <div className="animate-fade-in-up">
-                  <p>Our Face & Body Baby Lotion is specifically formulated to handle the unique needs of a newborn's developing skin barrier. Unlike adult skin, baby skin loses moisture up to 5 times faster, making our deep-hydration technology critical for preventing dryness and flaking.</p>
-                  <p>Infused with a blend of 5 essential ceramides, natural shea butter, and oat extract, it creates a breathable, protective layer that locks in moisture for 24 hours while keeping environmental irritants out.</p>
-                  <p>Developed with pediatric dermatologists, the texture is remarkably lightweight, melting instantly into the skin without leaving a greasy or sticky residue, allowing you to dress your baby immediately after application.</p>
-                </div>
-              )}
-              {activeTab === 'ingredients' && (
-                <div className="animate-fade-in-up">
-                  <h4 className="font-bold text-primary mb-4 text-xl">Key Ingredients:</h4>
-                  <ul className="space-y-4 mb-8">
-                    <li className="bg-surface-container p-4 rounded-xl"><strong>5X Ceramide Complex:</strong> Mimics the skin's natural lipid barrier to lock in moisture and protect against irritants.</li>
-                    <li className="bg-surface-container p-4 rounded-xl"><strong>Natural Shea Butter:</strong> Intensely nourishes and softens rough patches.</li>
-                    <li className="bg-surface-container p-4 rounded-xl"><strong>Colloidal Oatmeal:</strong> Clinically proven to soothe redness and itching.</li>
-                  </ul>
-                  <p className="text-sm"><strong>Full List:</strong> Water (Aqua), Glycerin, Caprylic/Capric Triglyceride, Cetearyl Alcohol, Ceramide NP, Ceramide AP, Ceramide EOP, Phytosphingosine, Cholesterol, Butyrospermum Parkii (Shea) Butter, Avena Sativa (Oat) Kernel Extract, Sodium Lauroyl Lactylate, Carbomer, Xanthan Gum, Phenoxyethanol, Ethylhexylglycerin.</p>
-                </div>
-              )}
-              {activeTab === 'how-to' && (
-                <div className="animate-fade-in-up">
-                  <div className="grid md:grid-cols-3 gap-8 text-center mt-8">
-                    <div className="glass-panel p-8 rounded-2xl shadow-sm border border-outline-variant/10 hover:-translate-y-2 transition-transform">
-                      <div className="w-16 h-16 bg-primary-container text-primary rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">1</div>
-                      <h5 className="font-bold text-primary mb-3 text-lg">Cleanse</h5>
-                      <p className="text-sm">Start with clean, towel-dried skin after a gentle bath.</p>
+            {/* Tab Content */}
+            <div className="max-w-4xl mx-auto min-h-[350px]">
+              <AnimatePresence mode="wait">
+                {activeTab === 'description' && (
+                  <motion.div 
+                    key="desc"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -20 }}
+                    transition={{ duration: 0.4 }}
+                    className="glass-panel p-8 md:p-12 rounded-[2rem] border border-primary/10 shadow-lg text-center space-y-6"
+                  >
+                    <div className="w-20 h-20 bg-primary-fixed/20 text-primary rounded-full flex items-center justify-center mx-auto mb-8">
+                      <span className="material-symbols-outlined text-4xl">water_drop</span>
                     </div>
-                    <div className="glass-panel p-8 rounded-2xl shadow-sm border border-outline-variant/10 hover:-translate-y-2 transition-transform">
-                      <div className="w-16 h-16 bg-primary-container text-primary rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">2</div>
-                      <h5 className="font-bold text-primary mb-3 text-lg">Dispense</h5>
-                      <p className="text-sm">Pump a generous amount of lotion into your hands.</p>
+                    <p className="text-xl text-on-surface font-medium leading-relaxed">
+                      {t("productDetail.tabs.description.p1")}
+                    </p>
+                    <p className="text-lg text-on-surface-variant leading-relaxed">
+                      {t("productDetail.tabs.description.p2")}
+                    </p>
+                    <p className="text-lg text-on-surface-variant leading-relaxed font-semibold italic mt-4 text-primary">
+                      {t("productDetail.tabs.description.quote")}
+                    </p>
+                  </motion.div>
+                )}
+
+                {activeTab === 'ingredients' && (
+                  <motion.div 
+                    key="ing"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -20 }}
+                    transition={{ duration: 0.4 }}
+                    className="grid md:grid-cols-2 gap-8"
+                  >
+                    <div className="space-y-6">
+                      <div className="bg-surface-container-lowest p-6 rounded-3xl border border-outline-variant/30 shadow-sm hover:shadow-md transition-shadow group flex items-start gap-4">
+                        <div className="w-12 h-12 bg-blue-50 text-blue-500 rounded-full flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                          <span className="material-symbols-outlined">shield</span>
+                        </div>
+                        <div>
+                          <h4 className="font-bold text-primary mb-2 text-lg">{t("productDetail.tabs.ingredients.ceramide.title")}</h4>
+                          <p className="text-on-surface-variant text-sm">{t("productDetail.tabs.ingredients.ceramide.desc")}</p>
+                        </div>
+                      </div>
+                      <div className="bg-surface-container-lowest p-6 rounded-3xl border border-outline-variant/30 shadow-sm hover:shadow-md transition-shadow group flex items-start gap-4">
+                        <div className="w-12 h-12 bg-yellow-50 text-yellow-600 rounded-full flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                          <span className="material-symbols-outlined">spa</span>
+                        </div>
+                        <div>
+                          <h4 className="font-bold text-primary mb-2 text-lg">{t("productDetail.tabs.ingredients.shea.title")}</h4>
+                          <p className="text-on-surface-variant text-sm">{t("productDetail.tabs.ingredients.shea.desc")}</p>
+                        </div>
+                      </div>
+                      <div className="bg-surface-container-lowest p-6 rounded-3xl border border-outline-variant/30 shadow-sm hover:shadow-md transition-shadow group flex items-start gap-4">
+                        <div className="w-12 h-12 bg-green-50 text-green-600 rounded-full flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                          <span className="material-symbols-outlined">eco</span>
+                        </div>
+                        <div>
+                          <h4 className="font-bold text-primary mb-2 text-lg">{t("productDetail.tabs.ingredients.oat.title")}</h4>
+                          <p className="text-on-surface-variant text-sm">{t("productDetail.tabs.ingredients.oat.desc")}</p>
+                        </div>
+                      </div>
                     </div>
-                    <div className="glass-panel p-8 rounded-2xl shadow-sm border border-outline-variant/10 hover:-translate-y-2 transition-transform">
-                      <div className="w-16 h-16 bg-primary-container text-primary rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">3</div>
-                      <h5 className="font-bold text-primary mb-3 text-lg">Massage</h5>
-                      <p className="text-sm">Gently massage in sweeping motions over face and body.</p>
+                    <div className="bg-surface-container p-8 rounded-[2rem] border border-outline-variant/20 flex flex-col justify-center relative overflow-hidden">
+                      <div className="absolute top-0 right-0 p-8 opacity-5 text-primary pointer-events-none">
+                        <span className="material-symbols-outlined text-9xl">science</span>
+                      </div>
+                      <h4 className="font-bold text-primary mb-6 text-xl relative z-10 flex items-center gap-2">
+                        <span className="material-symbols-outlined">list_alt</span> {t("productDetail.tabs.ingredients.full")}
+                      </h4>
+                      <p className="text-on-surface-variant text-sm leading-loose relative z-10 font-mono bg-white/50 p-6 rounded-2xl">
+                        Water (Aqua), Glycerin, Caprylic/Capric Triglyceride, Cetearyl Alcohol, Ceramide NP, Ceramide AP, Ceramide EOP, Phytosphingosine, Cholesterol, Butyrospermum Parkii (Shea) Butter, Avena Sativa (Oat) Kernel Extract, Sodium Lauroyl Lactylate, Carbomer, Xanthan Gum, Phenoxyethanol, Ethylhexylglycerin.
+                      </p>
                     </div>
-                  </div>
-                </div>
-              )}
+                  </motion.div>
+                )}
+
+                {activeTab === 'how-to' && (
+                  <motion.div 
+                    key="how"
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.95 }}
+                    transition={{ duration: 0.4 }}
+                    className="grid md:grid-cols-3 gap-6 text-center"
+                  >
+                    {[
+                      { step: 1, title: t("productDetail.tabs.howto.step1.title"), desc: t("productDetail.tabs.howto.step1.desc"), icon: 'shower' },
+                      { step: 2, title: t("productDetail.tabs.howto.step2.title"), desc: t("productDetail.tabs.howto.step2.desc"), icon: 'front_hand' },
+                      { step: 3, title: t("productDetail.tabs.howto.step3.title"), desc: t("productDetail.tabs.howto.step3.desc"), icon: 'self_care' }
+                    ].map((item) => (
+                      <div key={item.step} className="glass-panel p-10 rounded-[2rem] shadow-md border border-outline-variant/10 hover:-translate-y-4 hover:shadow-xl transition-all duration-300 group">
+                        <div className="w-20 h-20 bg-primary-container text-primary rounded-2xl rotate-3 group-hover:rotate-12 transition-transform flex items-center justify-center mx-auto mb-8 relative">
+                          <span className="material-symbols-outlined text-4xl relative z-10">{item.icon}</span>
+                          <div className="absolute -top-3 -right-3 w-8 h-8 bg-secondary-fixed text-on-secondary-fixed rounded-full flex items-center justify-center font-bold text-sm shadow-sm">{item.step}</div>
+                        </div>
+                        <h5 className="font-bold text-primary mb-4 text-2xl group-hover:text-secondary-fixed transition-colors">{item.title}</h5>
+                        <p className="text-on-surface-variant leading-relaxed">{item.desc}</p>
+                      </div>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </div>
           </ScrollReveal>
         </div>

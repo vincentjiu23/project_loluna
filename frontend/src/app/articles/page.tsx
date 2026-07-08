@@ -1,54 +1,56 @@
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import Button from "@/components/Button";
+import { useTranslation } from "@/context/LanguageContext";
 
 export default function Articles() {
+  const { t } = useTranslation();
   const articles = [
     {
       id: "1",
-      title: "Understanding Baby Skin: Why It Needs Special Care",
-      excerpt: "A deep dive into the anatomy of newborn skin and why it loses moisture up to 5 times faster than adult skin.",
-      category: "Science & Education",
+      title: t("articles.list.0.title"),
+      excerpt: t("articles.list.0.excerpt"),
+      category: t("articles.list.0.category"),
       date: "Oct 12, 2024",
       image: "/images/Section 4/Section 4_Scientist.png"
     },
     {
       id: "2",
-      title: "The 5X Ceramide Difference",
-      excerpt: "What are ceramides, and why did our clinical team choose a 5-complex blend for our signature lotion?",
-      category: "Product Spotlight",
+      title: t("articles.list.1.title"),
+      excerpt: t("articles.list.1.excerpt"),
+      category: t("articles.list.1.category"),
       date: "Oct 05, 2024",
       image: "/images/Section 4/Section 4_Formulated Australia.png"
     },
     {
       id: "3",
-      title: "Building a Calming Bedtime Routine",
-      excerpt: "Pediatricians share their top tips for using bath time and massage to help your baby sleep through the night.",
-      category: "Parenting Tips",
+      title: t("articles.list.2.title"),
+      excerpt: t("articles.list.2.excerpt"),
+      category: t("articles.list.2.category"),
       date: "Sep 28, 2024",
       image: "/images/Background/Background.jpg"
     },
     {
       id: "4",
-      title: "Decoding Eczema in Newborns",
-      excerpt: "How to spot the early signs of eczema and the best gentle ingredients to soothe flare-ups naturally.",
-      category: "Science & Education",
+      title: t("articles.list.3.title"),
+      excerpt: t("articles.list.3.excerpt"),
+      category: t("articles.list.3.category"),
       date: "Sep 15, 2024",
       image: "/images/Section 4/Section 4_Scientist.png"
     },
     {
       id: "5",
-      title: "Our Sustainability Pledge: 2025 and Beyond",
-      excerpt: "Read about our commitment to reducing plastic waste and ensuring our ingredients are ethically sourced.",
-      category: "Behind the Brand",
+      title: t("articles.list.4.title"),
+      excerpt: t("articles.list.4.excerpt"),
+      category: t("articles.list.4.category"),
       date: "Sep 02, 2024",
       image: "/images/Section 4/Section 4_Formulated Australia.png"
     },
     {
       id: "6",
-      title: "Navigating Sun Protection for Infants",
-      excerpt: "When is it safe to use sunscreen on your baby? A comprehensive guide for summer safety.",
-      category: "Parenting Tips",
+      title: t("articles.list.5.title"),
+      excerpt: t("articles.list.5.excerpt"),
+      category: t("articles.list.5.category"),
       date: "Aug 20, 2024",
       image: "/images/Background/Background.jpg"
     }
@@ -62,13 +64,13 @@ export default function Articles() {
         <ScrollReveal>
           <div className="max-w-3xl mx-auto space-y-6 relative z-10">
             <span className="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-sm shadow-sm">
-              Loluna Journal
+              {t("articles.badge")}
             </span>
             <h1 className="text-5xl md:text-6xl font-headline-xl text-primary leading-tight">
-              Insights for the <br/><span className="text-gradient-primary">Modern Parent</span>
+              {t("articles.title1")} <br/><span className="text-gradient-primary">{t("articles.title2")}</span>
             </h1>
             <p className="text-xl text-on-surface-variant">
-              Expert advice, scientific breakdowns, and stories from our community.
+              {t("articles.desc")}
             </p>
           </div>
         </ScrollReveal>
@@ -90,13 +92,13 @@ export default function Articles() {
               <div className="md:w-2/5 bg-primary text-on-primary p-10 md:p-14 flex flex-col justify-center relative overflow-hidden">
                 <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl group-hover:bg-primary-container/40 transition-colors duration-500"></div>
                 <div className="relative z-10 space-y-6">
-                  <span className="text-primary-fixed font-bold tracking-widest uppercase text-sm">Featured • Science</span>
-                  <h2 className="text-3xl md:text-4xl font-bold leading-snug group-hover:text-secondary-fixed transition-colors">Understanding Baby Skin: Why It Needs Special Care</h2>
+                  <span className="text-primary-fixed font-bold tracking-widest uppercase text-sm">{t("articles.featured")} • {articles[0].category.split(" ")[0]}</span>
+                  <h2 className="text-3xl md:text-4xl font-bold leading-snug group-hover:text-secondary-fixed transition-colors">{articles[0].title}</h2>
                   <p className="text-primary-fixed/90 text-lg leading-relaxed">
-                    A deep dive into the anatomy of newborn skin and why it loses moisture up to 5 times faster than adult skin, requiring specialized barrier protection.
+                    {articles[0].excerpt}
                   </p>
                   <Link href="#" className="inline-flex items-center gap-2 font-bold text-secondary-fixed hover:underline pt-4 group-hover:gap-4 transition-all">
-                    Read Full Article <span className="material-symbols-outlined">arrow_forward</span>
+                    {t("articles.readFull")} <span className="material-symbols-outlined">arrow_forward</span>
                   </Link>
                 </div>
               </div>
@@ -109,11 +111,11 @@ export default function Articles() {
       <section className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-12">
         <ScrollReveal delay={0.1}>
           <div className="flex flex-wrap gap-3 pb-4 border-b border-outline-variant/30">
-            <Button variant="primary" className="!px-6 !py-2.5 !text-sm">All Topics</Button>
-            <Button variant="text" className="!px-6 !py-2.5 !text-sm !text-on-surface-variant hover:!text-primary">Science & Education</Button>
-            <Button variant="text" className="!px-6 !py-2.5 !text-sm !text-on-surface-variant hover:!text-primary">Parenting Tips</Button>
-            <Button variant="text" className="!px-6 !py-2.5 !text-sm !text-on-surface-variant hover:!text-primary">Product Spotlight</Button>
-            <Button variant="text" className="!px-6 !py-2.5 !text-sm !text-on-surface-variant hover:!text-primary">Community</Button>
+            <Button variant="primary" className="!px-6 !py-2.5 !text-sm">{t("articles.categories.all")}</Button>
+            <Button variant="text" className="!px-6 !py-2.5 !text-sm !text-on-surface-variant hover:!text-primary">{t("articles.categories.science")}</Button>
+            <Button variant="text" className="!px-6 !py-2.5 !text-sm !text-on-surface-variant hover:!text-primary">{t("articles.categories.parenting")}</Button>
+            <Button variant="text" className="!px-6 !py-2.5 !text-sm !text-on-surface-variant hover:!text-primary">{t("articles.categories.product")}</Button>
+            <Button variant="text" className="!px-6 !py-2.5 !text-sm !text-on-surface-variant hover:!text-primary">{t("articles.categories.community")}</Button>
           </div>
         </ScrollReveal>
       </section>
@@ -146,7 +148,7 @@ export default function Articles() {
                       {article.excerpt}
                     </p>
                     <div className="mt-auto text-primary font-bold inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-                      Read more <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                      {t("articles.readMore")} <span className="material-symbols-outlined text-sm">arrow_forward</span>
                     </div>
                   </div>
                 </article>
@@ -157,7 +159,7 @@ export default function Articles() {
 
         <div className="text-center mt-16">
           <ScrollReveal>
-            <Button variant="outline" className="mx-auto !px-12 !py-4">Load More Articles</Button>
+            <Button variant="outline" className="mx-auto !px-12 !py-4">{t("articles.loadMore")}</Button>
           </ScrollReveal>
         </div>
       </section>

@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
 
 interface ProductCardProps {
@@ -10,54 +9,49 @@ interface ProductCardProps {
   price: string;
   image: string;
   badge?: string;
+  onClick: () => void;
 }
 
-export default function ProductCard({ id, name, description, price, image, badge }: ProductCardProps) {
+export default function ProductCard({ id, name, description, price, image, badge, onClick }: ProductCardProps) {
   return (
-    <motion.div
-      whileHover="hover"
-      className="glass-panel rounded-2xl p-6 flex flex-col relative h-full group"
-    >
-      {badge && (
-        <div className="absolute top-6 left-6 z-10 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold shadow-md">
-          {badge}
-        </div>
-      )}
-      
-      <div className="bg-surface-container-lowest rounded-xl mb-6 aspect-square overflow-hidden flex items-center justify-center p-4 relative">
-        <motion.img 
-          variants={{
-            hover: { scale: 1.1 }
-          }}
-          transition={{ duration: 0.4 }}
-          src={image} 
-          alt={name} 
-          className="object-contain w-full h-full" 
-        />
-        <motion.div 
-          className="absolute inset-0 bg-primary/5 opacity-0 transition-opacity"
-          variants={{
-            hover: { opacity: 1 }
-          }}
-        />
-      </div>
-      
-      <h3 className="font-bold text-xl text-primary mb-2 group-hover:text-primary-container transition-colors">{name}</h3>
-      <p className="text-sm text-on-surface-variant mb-6 line-clamp-2 flex-grow">{description}</p>
-      
-      <div className="flex justify-between items-center mt-auto">
-        <span className="text-2xl font-bold text-primary-container">{price}</span>
+    <div onClick={onClick} className="block h-full cursor-pointer">
+      <motion.div
+        whileHover="hover"
+        className="glass-panel rounded-[2rem] p-8 flex flex-col items-center text-center relative h-full group border border-outline-variant/20 hover:border-primary/30 transition-colors shadow-sm hover:shadow-xl"
+      >
+        {badge && (
+          <div className="absolute top-6 left-6 z-10 bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full text-xs font-bold shadow-sm tracking-wide">
+            {badge}
+          </div>
+        )}
         
-        <Link href={`/products/${id}`}>
-          <motion.button 
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center hover:bg-primary-container hover:text-primary transition-colors shadow-lg"
-          >
-            <span className="material-symbols-outlined text-sm">arrow_forward</span>
-          </motion.button>
-        </Link>
-      </div>
-    </motion.div>
+        <div className="w-full aspect-square mb-8 relative flex items-center justify-center">
+          <div className="absolute inset-0 bg-primary/5 rounded-full scale-50 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-500 blur-2xl"></div>
+          <motion.img 
+            variants={{
+              hover: { y: -10, scale: 1.05 }
+            }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            src={image} 
+            alt={name} 
+            className="object-contain w-[85%] h-[85%] relative z-10 drop-shadow-xl" 
+          />
+        </div>
+        
+        <h3 className="font-bold text-xl md:text-2xl text-primary mb-3 group-hover:text-secondary-fixed transition-colors leading-tight">
+          {name}
+        </h3>
+        
+        <p className="text-on-surface-variant font-medium tracking-wide flex-grow">
+          {description}
+        </p>
+        
+        <div className="mt-8 overflow-hidden">
+          <span className="inline-flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+            Discover Details <span className="material-symbols-outlined text-sm">east</span>
+          </span>
+        </div>
+      </motion.div>
+    </div>
   );
 }

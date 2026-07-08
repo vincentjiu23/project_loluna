@@ -1,8 +1,12 @@
+"use client";
+
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import Button from "@/components/Button";
+import { useTranslation } from "@/context/LanguageContext";
 
 export default function Home() {
+  const { t } = useTranslation();
   return (
     <main className="pt-20">
       {/* Hero Banner */}
@@ -14,26 +18,27 @@ export default function Home() {
           <div className="md:w-1/2 space-y-6">
             <ScrollReveal delay={0.1}>
               <span className="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-sm shadow-md">
-                New Formula with 5X Ceramide
+                {t("hero.badge")}
               </span>
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
               <h1 className="font-headline-xl text-headline-xl text-primary leading-tight">
-                Making Everyday Moments Extra <span className="text-gradient-primary">Special</span>
+                {t("hero.title1")} <br className="hidden md:block"/>
+                {t("hero.title2")} <span className="text-gradient-primary">{t("hero.titleHighlight")}</span>
               </h1>
             </ScrollReveal>
             <ScrollReveal delay={0.3}>
               <p className="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
-                Safe, Premium, and Accessible skincare designed for your baby's delicate skin. Formulated with love and clinical precision.
+                {t("hero.subtitle")}
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.4}>
               <div className="flex flex-wrap gap-4 pt-4">
                 <Link href="/products">
-                  <Button variant="primary">Shop Now</Button>
+                  <Button variant="primary">{t("hero.ctaPrimary")}</Button>
                 </Link>
                 <Link href="/about">
-                  <Button variant="outline">Our Story</Button>
+                  <Button variant="outline">{t("hero.ctaSecondary")}</Button>
                 </Link>
               </div>
             </ScrollReveal>
@@ -61,8 +66,8 @@ export default function Home() {
                 <div className="w-16 h-16 mx-auto bg-primary-container rounded-full flex items-center justify-center shadow-inner">
                   <span className="material-symbols-outlined text-primary text-3xl">water_drop</span>
                 </div>
-                <h3 className="font-bold text-xl text-primary">Hypoallergenic</h3>
-                <p className="text-on-surface-variant text-sm">Carefully crafted to minimize allergy risks.</p>
+                <h3 className="font-bold text-xl text-primary">{t("home.features.hypoallergenic.title")}</h3>
+                <p className="text-on-surface-variant text-sm">{t("home.features.hypoallergenic.desc")}</p>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
@@ -70,8 +75,8 @@ export default function Home() {
                 <div className="w-16 h-16 mx-auto bg-primary-container rounded-full flex items-center justify-center shadow-inner">
                   <span className="material-symbols-outlined text-primary text-3xl">science</span>
                 </div>
-                <h3 className="font-bold text-xl text-primary">Dermatologically Tested</h3>
-                <p className="text-on-surface-variant text-sm">Proven safe for sensitive baby skin.</p>
+                <h3 className="font-bold text-xl text-primary">{t("home.features.dermatologically.title")}</h3>
+                <p className="text-on-surface-variant text-sm">{t("home.features.dermatologically.desc")}</p>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={0.3}>
@@ -79,8 +84,8 @@ export default function Home() {
                 <div className="w-16 h-16 mx-auto bg-primary-container rounded-full flex items-center justify-center shadow-inner">
                   <span className="material-symbols-outlined text-primary text-3xl">child_care</span>
                 </div>
-                <h3 className="font-bold text-xl text-primary">Safe for Newborn</h3>
-                <p className="text-on-surface-variant text-sm">Gentle enough from day one.</p>
+                <h3 className="font-bold text-xl text-primary">{t("home.features.newborn.title")}</h3>
+                <p className="text-on-surface-variant text-sm">{t("home.features.newborn.desc")}</p>
               </div>
             </ScrollReveal>
           </div>
@@ -108,40 +113,40 @@ export default function Home() {
             <div className="md:w-1/2 space-y-8">
               <ScrollReveal delay={0.1}>
                 <span className="bg-secondary-container px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide shadow-sm">
-                  Best Seller
+                  {t("home.spotlight.badge")}
                 </span>
               </ScrollReveal>
               <ScrollReveal delay={0.2}>
                 <h2 className="font-headline-lg text-headline-lg text-primary leading-tight">
-                  Face & Body Baby Lotion<br />
-                  <span className="text-gradient-primary">with 5X Ceramide</span>
+                  {t("home.spotlight.title1")}<br />
+                  <span className="text-gradient-primary">{t("home.spotlight.title2")}</span>
                 </h2>
               </ScrollReveal>
               <ScrollReveal delay={0.3}>
                 <p className="text-on-surface-variant font-body-md">
-                  Our clinically backed formula hydrates and strengthens the skin barrier using 5 essential ceramides. It's the ultimate protection for your baby's delicate complexion, crafted after years of research in Australian laboratories.
+                  {t("home.spotlight.desc")}
                 </p>
               </ScrollReveal>
               <ScrollReveal delay={0.4}>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-3 text-on-surface-variant">
                     <span className="material-symbols-outlined text-primary-container">check_circle</span>
-                    24-hour deep hydration
+                    {t("home.spotlight.point1")}
                   </li>
                   <li className="flex items-center gap-3 text-on-surface-variant">
                     <span className="material-symbols-outlined text-primary-container">check_circle</span>
-                    Soothes dry and itchy patches
+                    {t("home.spotlight.point2")}
                   </li>
                   <li className="flex items-center gap-3 text-on-surface-variant">
                     <span className="material-symbols-outlined text-primary-container">check_circle</span>
-                    Non-greasy, fast-absorbing texture
+                    {t("home.spotlight.point3")}
                   </li>
                 </ul>
               </ScrollReveal>
               <ScrollReveal delay={0.5}>
                 <Link href="/products" className="inline-block mt-4">
                   <Button variant="primary">
-                    Discover the Magic <span className="material-symbols-outlined">arrow_forward</span>
+                    {t("home.spotlight.button")} <span className="material-symbols-outlined">arrow_forward</span>
                   </Button>
                 </Link>
               </ScrollReveal>
@@ -155,9 +160,9 @@ export default function Home() {
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop space-y-16">
           <ScrollReveal>
             <div className="space-y-4">
-              <h2 className="font-headline-lg text-headline-lg text-primary">Science Meets Gentleness</h2>
+              <h2 className="font-headline-lg text-headline-lg text-primary">{t("home.science.title")}</h2>
               <p className="text-on-surface-variant max-w-2xl mx-auto">
-                We bridge the gap between laboratory precision and maternal instinct.
+                {t("home.science.desc")}
               </p>
             </div>
           </ScrollReveal>
@@ -173,8 +178,8 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-10 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                  <h3 className="text-3xl font-bold text-white mb-2">Tested in Australia</h3>
-                  <p className="text-white/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">World-class standards for every drop.</p>
+                  <h3 className="text-3xl font-bold text-white mb-2">{t("home.science.card1.title")}</h3>
+                  <p className="text-white/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">{t("home.science.card1.desc")}</p>
                 </div>
               </div>
             </ScrollReveal>
@@ -188,8 +193,8 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-10 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                  <h3 className="text-3xl font-bold text-white mb-2">Modern Skincare Tech</h3>
-                  <p className="text-white/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Innovation for the next generation.</p>
+                  <h3 className="text-3xl font-bold text-white mb-2">{t("home.science.card2.title")}</h3>
+                  <p className="text-white/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">{t("home.science.card2.desc")}</p>
                 </div>
               </div>
             </ScrollReveal>
@@ -203,11 +208,11 @@ export default function Home() {
           <div className="space-y-6">
             <ScrollReveal direction="left">
               <span className="inline-block bg-white/20 px-4 py-1.5 rounded-full text-sm font-bold tracking-widest uppercase backdrop-blur-md border border-white/10">
-                Community
+                {t("home.csr.badge")}
               </span>
-              <h2 className="font-headline-lg text-headline-lg mt-6">Caring for Children and Families</h2>
+              <h2 className="font-headline-lg text-headline-lg mt-6">{t("home.csr.title")}</h2>
               <p className="text-primary-fixed opacity-90 text-lg mt-6">
-                Our commitment goes beyond skincare. We believe every child deserves a healthy start in life, which is why we actively support communities across the region.
+                {t("home.csr.desc")}
               </p>
             </ScrollReveal>
           </div>
@@ -215,8 +220,8 @@ export default function Home() {
             <ScrollReveal delay={0.2} direction="right">
               <div className="bg-white/10 p-8 rounded-2xl flex items-center justify-between backdrop-blur-md border border-white/10 hover:bg-white/20 transition-colors cursor-pointer">
                 <div>
-                  <h4 className="text-4xl font-bold">150,000+</h4>
-                  <p className="text-primary-fixed text-sm mt-2">Skincare products donated to families in need.</p>
+                  <h4 className="text-4xl font-bold">{t("home.csr.stat1.title")}</h4>
+                  <p className="text-primary-fixed text-sm mt-2">{t("home.csr.stat1.desc")}</p>
                 </div>
                 <div className="w-16 h-16 bg-primary-container text-primary rounded-full flex items-center justify-center shrink-0 shadow-lg">
                   <span className="material-symbols-outlined text-3xl">volunteer_activism</span>
@@ -226,8 +231,8 @@ export default function Home() {
             <ScrollReveal delay={0.4} direction="right">
               <div className="bg-white/10 p-8 rounded-2xl flex items-center justify-between backdrop-blur-md border border-white/10 hover:bg-white/20 transition-colors cursor-pointer">
                 <div>
-                  <h4 className="text-3xl font-bold">Playground Support</h4>
-                  <p className="text-primary-fixed text-sm mt-2">Developing inclusive spaces for children with Down Syndrome.</p>
+                  <h4 className="text-3xl font-bold">{t("home.csr.stat2.title")}</h4>
+                  <p className="text-primary-fixed text-sm mt-2">{t("home.csr.stat2.desc")}</p>
                 </div>
                 <div className="w-16 h-16 bg-primary-container text-primary rounded-full flex items-center justify-center shrink-0 shadow-lg">
                   <span className="material-symbols-outlined text-3xl">toys_and_games</span>
@@ -244,13 +249,13 @@ export default function Home() {
           <ScrollReveal>
             <div className="glass-panel rounded-3xl p-10 md:p-14 flex flex-col md:flex-row items-center justify-between gap-8 bg-gradient-to-br from-surface to-primary-fixed/20 shadow-xl border border-primary/10">
               <div>
-                <h3 className="text-3xl font-bold text-primary mb-3">Find Our Stores</h3>
-                <p className="text-on-surface-variant text-lg">Experience the gentleness of Loluna at a retailer near you.</p>
+                <h3 className="text-3xl font-bold text-primary mb-3">{t("home.store.title")}</h3>
+                <p className="text-on-surface-variant text-lg">{t("home.store.desc")}</p>
               </div>
               <div className="flex w-full md:w-auto gap-3">
                 <input
                   type="text"
-                  placeholder="Enter your city or zip code"
+                  placeholder={t("home.store.placeholder")}
                   className="px-8 py-4 rounded-full border border-outline-variant bg-white w-full md:w-72 focus:outline-none focus:ring-4 focus:ring-primary/20 focus:border-primary transition-all text-on-surface"
                 />
                 <Button variant="primary" className="!px-0 w-14 h-14 !rounded-full shrink-0">

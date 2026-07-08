@@ -2,9 +2,12 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { useTranslation } from "@/context/LanguageContext";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isLangOpen, setIsLangOpen] = useState(false);
+  const { t, language, setLanguage } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,39 +30,59 @@ export default function Header() {
           </Link>
           <nav className="hidden md:flex gap-6">
             <Link href="/about" className="text-on-surface-variant font-body-md hover:text-primary transition-colors">
-              About Us
+              {t("nav.about")}
             </Link>
             <Link href="/products" className="text-on-surface-variant font-body-md hover:text-primary transition-colors">
-              Products
+              {t("nav.products")}
+            </Link>
+            <Link href="/stores" className="text-on-surface-variant font-body-md hover:text-primary transition-colors">
+              {t("nav.stores")}
             </Link>
             <Link href="/articles" className="text-on-surface-variant font-body-md hover:text-primary transition-colors">
-              Articles
+              {t("nav.articles")}
             </Link>
             <Link href="/contact" className="text-on-surface-variant font-body-md hover:text-primary transition-colors">
-              Contact Us
+              {t("nav.contact")}
             </Link>
           </nav>
         </div>
         <div className="flex items-center gap-4">
           <div className="hidden md:flex items-center bg-surface-container-low px-4 py-2 rounded-full border border-outline-variant/50">
             <span className="material-symbols-outlined text-on-surface-variant text-sm mr-2">search</span>
-            <input className="bg-transparent border-none focus:ring-0 text-sm w-32" placeholder="Search..." type="text" />
+            <input className="bg-transparent border-none focus:ring-0 text-sm w-32" placeholder={t("nav.search")} type="text" />
           </div>
           {/* Language Switcher */}
-          <button className="p-2 text-on-surface-variant hover:text-primary transition-colors hidden md:block">
-            <span className="material-symbols-outlined">language</span>
-          </button>
-          <button className="p-2 text-on-surface-variant hover:text-primary transition-colors">
+          <div className="relative hidden md:block">
+            <button 
+              onClick={() => setIsLangOpen(!isLangOpen)}
+              className="p-2 text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1"
+            >
+              <span className="material-symbols-outlined">language</span>
+              <span className="text-sm font-bold uppercase">{language}</span>
+            </button>
+            {isLangOpen && (
+              <div className="absolute top-full right-0 mt-2 bg-surface rounded-xl shadow-lg border border-outline-variant/20 py-2 w-40 overflow-hidden flex flex-col z-50">
+                <button 
+                  onClick={() => { setLanguage("en"); setIsLangOpen(false); }}
+                  className={`px-4 py-2 text-left text-sm hover:bg-surface-container transition-colors ${language === 'en' ? 'font-bold text-primary bg-primary/5' : ''}`}
+                >
+                  English
+                </button>
+                <button 
+                  onClick={() => { setLanguage("id"); setIsLangOpen(false); }}
+                  className={`px-4 py-2 text-left text-sm hover:bg-surface-container transition-colors ${language === 'id' ? 'font-bold text-primary bg-primary/5' : ''}`}
+                >
+                  Bahasa Indonesia
+                </button>
+              </div>
+            )}
+          </div>
+          <Link href="/products" className="p-2 text-on-surface-variant hover:text-primary transition-colors">
             <span className="material-symbols-outlined">shopping_basket</span>
-          </button>
+          </Link>
           <button className="md:hidden p-2 text-on-surface-variant hover:text-primary transition-colors">
             <span className="material-symbols-outlined">menu</span>
           </button>
-          <img
-            className="w-10 h-10 rounded-full border-2 border-primary-container object-cover hidden md:block"
-            alt="User profile"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwTx3qNGvVR8GMfH2RkVMnODE42PLOvIylRgROo6l-tafsxKlcOtkx1XozTcvUZKstXO8xUg11XTnFgRr-xrm5OMH3skMwMbPJ7BfVW__o6waKngxhfSqekJOw5-0kNb4mzr6J7YiwTeoyC7C1vZt8_hruR9H1tuUjjsvrImePD09AJL3fvajSbiIy8W-TQmr8eJMXvY3OSs643Npn4F-IJ-uMxAeJ9_4mvOKcfzwT4KpDxOFxgLNP45-fg8OHqwNCD5k9gKuQnus"
-          />
         </div>
       </div>
     </header>

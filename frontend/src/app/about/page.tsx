@@ -1,9 +1,13 @@
+"use client";
+
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import Button from "@/components/Button";
 import StackedReviews from "@/components/StackedReviews";
+import { useTranslation } from "@/context/LanguageContext";
 
 export default function About() {
+  const { t } = useTranslation();
   return (
     <main className="pt-20">
       {/* Hero Section */}
@@ -13,23 +17,23 @@ export default function About() {
             <div className="space-y-8">
               <ScrollReveal delay={0.1}>
                 <span className="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md shadow-sm">
-                  Created by Parent to Parent
+                  {t("about.hero.badge")}
                 </span>
               </ScrollReveal>
               <ScrollReveal delay={0.2}>
                 <h1 className="font-headline-xl text-headline-xl text-primary leading-tight">
-                  Trusted by 3 Million Moms for Gentle, <span className="text-gradient-primary">Safe Care.</span>
+                  {t("about.hero.title1")} <span className="text-gradient-primary">{t("about.hero.title2")}</span>
                 </h1>
               </ScrollReveal>
               <ScrollReveal delay={0.3}>
                 <p className="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
-                  Loluna was born from a simple promise: to provide every baby with the purest skincare possible. Our journey began in a kitchen, driven by a parent's love and perfected by clinical science.
+                  {t("about.hero.desc")}
                 </p>
               </ScrollReveal>
               <ScrollReveal delay={0.4}>
                 <div className="flex flex-wrap gap-4 pt-2">
-                  <Button variant="primary">Our Story</Button>
-                  <Button variant="outline">Explore Science</Button>
+                  <Button variant="primary">{t("about.hero.btn1")}</Button>
+                  <Button variant="outline">{t("about.hero.btn2")}</Button>
                 </div>
               </ScrollReveal>
             </div>
@@ -54,7 +58,7 @@ export default function About() {
                     </div>
                     <div>
                       <p className="text-3xl font-bold text-primary">3M+</p>
-                      <p className="text-xs font-label-md uppercase tracking-wider text-on-surface-variant">Happy Moms</p>
+                      <p className="text-xs font-label-md uppercase tracking-wider text-on-surface-variant">{t("about.hero.stats")}</p>
                     </div>
                   </div>
                 </div>
@@ -69,9 +73,9 @@ export default function About() {
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
           <ScrollReveal>
             <div className="text-center mb-16 space-y-4">
-              <h2 className="font-headline-lg text-headline-lg text-primary">The Loluna Foundation</h2>
+              <h2 className="font-headline-lg text-headline-lg text-primary">{t("about.vision.title")}</h2>
               <p className="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">
-                Founded on the principles of transparency, clinical safety, and the emotional connection between parent and child.
+                {t("about.vision.desc")}
               </p>
             </div>
           </ScrollReveal>
@@ -82,10 +86,10 @@ export default function About() {
               <div className="relative group overflow-hidden rounded-3xl bg-primary-container/10 p-12 flex flex-col justify-end min-h-[400px] shadow-lg border border-primary-container/20 hover:shadow-xl transition-all h-full">
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent"></div>
                 <div className="relative z-10 space-y-4">
-                  <span className="text-primary font-bold tracking-widest uppercase text-xs">Our Heritage</span>
-                  <h3 className="text-4xl font-bold text-primary">The "Parent-First" Philosophy</h3>
+                  <span className="text-primary font-bold tracking-widest uppercase text-xs">{t("about.vision.heritage.badge")}</span>
+                  <h3 className="text-4xl font-bold text-primary">{t("about.vision.heritage.title")}</h3>
                   <p className="text-on-surface-variant max-w-md text-lg">
-                    Every formula we create is tested first on our own children. If it isn't good enough for our family, it isn't good enough for yours.
+                    {t("about.vision.heritage.desc")}
                   </p>
                 </div>
                 <div className="absolute top-12 right-12 opacity-10 group-hover:opacity-20 transition-opacity duration-500 transform group-hover:scale-110">
@@ -100,9 +104,9 @@ export default function About() {
                 <div className="w-20 h-20 rounded-full bg-secondary-container flex items-center justify-center shadow-inner">
                   <span className="material-symbols-outlined text-on-secondary-container text-4xl">verified_user</span>
                 </div>
-                <h3 className="text-2xl font-bold text-primary">Clinical Purity</h3>
+                <h3 className="text-2xl font-bold text-primary">{t("about.vision.purity.title")}</h3>
                 <p className="text-on-surface-variant">
-                  Hypoallergenic and dermatologically tested to the highest international standards.
+                  {t("about.vision.purity.desc")}
                 </p>
               </div>
             </ScrollReveal>
@@ -115,9 +119,9 @@ export default function About() {
                     eco
                   </span>
                 </div>
-                <h3 className="text-2xl font-bold text-primary">Nature's Essence</h3>
+                <h3 className="text-2xl font-bold text-primary">{t("about.vision.nature.title")}</h3>
                 <p className="text-on-surface-variant">
-                  98% plant-based ingredients sourced from sustainable, organic farms across the globe.
+                  {t("about.vision.nature.desc")}
                 </p>
               </div>
             </ScrollReveal>
@@ -128,12 +132,12 @@ export default function About() {
                 <div className="absolute top-0 right-0 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl"></div>
                 <div className="relative z-10 flex flex-col md:flex-row gap-12 items-center h-full">
                   <div className="space-y-6 flex-1">
-                    <h3 className="text-3xl font-bold text-secondary-fixed">3 Million Moms Can't Be Wrong</h3>
+                    <h3 className="text-3xl font-bold text-secondary-fixed">{t("about.vision.community.title")}</h3>
                     <p className="text-white/80 text-lg">
-                      From our first tube of moisturizing cream to becoming a household name, our growth is fueled by real recommendations from one parent to another.
+                      {t("about.vision.community.desc")}
                     </p>
                     <Link className="inline-flex items-center gap-2 text-secondary-fixed font-bold hover:underline group-hover:gap-4 transition-all" href="#">
-                      Read Community Stories <span className="material-symbols-outlined">arrow_forward</span>
+                      {t("about.vision.community.link")} <span className="material-symbols-outlined">arrow_forward</span>
                     </Link>
                   </div>
                   <div className="flex justify-end shrink-0 mt-10 md:mt-0 xl:pl-10">
@@ -156,24 +160,24 @@ export default function About() {
                   <img className="w-full h-full object-contain bg-surface-container-low" src="/images/Section 6/Section 6_Created by Parent.png" alt="Founder" />
                   <div className="absolute bottom-8 left-8 glass-panel p-8 rounded-2xl max-w-sm shadow-xl">
                     <p className="text-primary font-bold italic text-lg leading-relaxed">
-                      "We created Loluna because we wanted a world where parents never have to choose between science and safety."
+                      {t("about.founder.quote")}
                     </p>
-                    <p className="mt-4 font-bold text-sm text-on-surface-variant">— Dr. Elena Rossi, Founder & Mom</p>
+                    <p className="mt-4 font-bold text-sm text-on-surface-variant">{t("about.founder.author")}</p>
                   </div>
                 </div>
               </ScrollReveal>
             </div>
             <div className="w-full md:w-1/2 space-y-10">
               <ScrollReveal delay={0.1}>
-                <h2 className="font-headline-lg text-headline-lg text-primary">Born from <span className="text-gradient-primary">Necessity.</span></h2>
+                <h2 className="font-headline-lg text-headline-lg text-primary">{t("about.founder.title1")} <span className="text-gradient-primary">{t("about.founder.title2")}</span></h2>
               </ScrollReveal>
               <ScrollReveal delay={0.2}>
                 <div className="space-y-6 text-on-surface-variant font-body-md text-lg leading-relaxed">
                   <p>
-                    When our daughter was born with extremely sensitive skin, we scoured every shelf for products that were truly safe, effective, and sustainable. We found that most products were either too clinical and harsh, or too organic and ineffective.
+                    {t("about.founder.p1")}
                   </p>
                   <p>
-                    As a researcher and a mother, I knew there had to be a better way. I spent two years collaborating with world-class pediatric dermatologists to bridge that gap. The result was Loluna—a brand that treats your baby's skin with the same reverence and care we give our own.
+                    {t("about.founder.p2")}
                   </p>
                 </div>
               </ScrollReveal>
@@ -181,11 +185,11 @@ export default function About() {
                 <div className="grid grid-cols-2 gap-8 pt-8 border-t border-outline-variant/30">
                   <div>
                     <p className="text-4xl font-bold text-primary mb-1">2018</p>
-                    <p className="text-sm font-label-md text-on-surface-variant uppercase tracking-wider">Founded in Jakarta</p>
+                    <p className="text-sm font-label-md text-on-surface-variant uppercase tracking-wider">{t("about.founder.stat1")}</p>
                   </div>
                   <div>
                     <p className="text-4xl font-bold text-primary mb-1">15+</p>
-                    <p className="text-sm font-label-md text-on-surface-variant uppercase tracking-wider">Global Awards</p>
+                    <p className="text-sm font-label-md text-on-surface-variant uppercase tracking-wider">{t("about.founder.stat2")}</p>
                   </div>
                 </div>
               </ScrollReveal>
@@ -201,12 +205,12 @@ export default function About() {
             <div className="bg-primary-container/20 rounded-3xl p-12 md:p-24 text-center space-y-10 relative overflow-hidden shadow-lg border border-primary-container/30">
               <div className="absolute -top-24 -left-24 w-64 h-64 bg-secondary-container/40 rounded-full blur-3xl animate-blob"></div>
               <div className="absolute -bottom-24 -right-24 w-64 h-64 bg-primary/20 rounded-full blur-3xl animate-blob" style={{ animationDelay: '2s' }}></div>
-              <h2 className="font-headline-xl text-headline-xl text-primary relative z-10">Start Your Gentle Journey.</h2>
+              <h2 className="font-headline-xl text-headline-xl text-primary relative z-10">{t("about.cta.title")}</h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto relative z-10 text-lg">
-                Join the millions of parents who trust Loluna for their baby's daily skincare routine. Experience the difference of premium, science-backed care.
+                {t("about.cta.desc")}
               </p>
               <div className="flex justify-center gap-4 relative z-10 pt-4">
-                <Button variant="primary">Shop Best Sellers</Button>
+                <Button variant="primary">{t("about.cta.button")}</Button>
               </div>
             </div>
           </ScrollReveal>

@@ -1,0 +1,310 @@
+{
+  "nav": {
+    "about": "Tentang Kami",
+    "products": "Produk",
+    "stores": "Toko Kami",
+    "articles": "Artikel",
+    "contact": "Hubungi Kami",
+    "search": "Cari...",
+    "language": "Bahasa Indonesia",
+    "languageSwitch": "Ganti ke English"
+  },
+  "hero": {
+    "title1": "Perawatan Lembut",
+    "title2": "untuk",
+    "titleHighlight": "Si Kecil",
+    "subtitle": "Temukan rangkaian perawatan kulit alami yang teruji secara klinis, dirancang khusus untuk kulit bayi yang sensitif.",
+    "ctaPrimary": "Belanja Sekarang",
+    "ctaSecondary": "Bahan Kami",
+    "badge": "Formula Baru dengan 5X Ceramide"
+  },
+  "home": {
+    "features": {
+      "hypoallergenic": {
+        "title": "Hipoalergenik",
+        "desc": "Diformulasikan khusus untuk meminimalkan risiko alergi."
+      },
+      "dermatologically": {
+        "title": "Teruji Dermatologis",
+        "desc": "Terbukti aman untuk kulit bayi yang sensitif."
+      },
+      "newborn": {
+        "title": "Aman untuk Bayi Baru Lahir",
+        "desc": "Sangat lembut bahkan sejak hari pertama."
+      }
+    },
+    "spotlight": {
+      "badge": "Terlaris",
+      "title1": "Face & Body Baby Lotion",
+      "title2": "dengan 5X Ceramide",
+      "desc": "Formula teruji klinis kami melembapkan dan memperkuat lapisan pelindung kulit menggunakan 5 ceramide esensial. Perlindungan maksimal untuk kulit lembut bayi Anda, dirancang dari riset mendalam di laboratorium Australia.",
+      "point1": "Kelembapan ekstra 24 jam",
+      "point2": "Meredakan kulit kering dan gatal",
+      "point3": "Tekstur tidak lengket dan cepat meresap",
+      "button": "Temukan Keajaibannya"
+    },
+    "science": {
+      "title": "Sains Bertemu Kelembutan",
+      "desc": "Kami menyatukan presisi laboratorium dengan insting keibuan.",
+      "card1": {
+        "title": "Teruji di Australia",
+        "desc": "Standar kelas dunia untuk setiap tetesnya."
+      },
+      "card2": {
+        "title": "Teknologi Modern",
+        "desc": "Inovasi perawatan kulit generasi mendatang."
+      }
+    },
+    "csr": {
+      "badge": "Komunitas",
+      "title": "Peduli pada Anak dan Keluarga",
+      "desc": "Komitmen kami melampaui perawatan kulit. Kami percaya setiap anak berhak mendapat awal yang sehat, karena itulah kami aktif mendukung berbagai komunitas.",
+      "stat1": {
+        "title": "150.000+",
+        "desc": "Produk disumbangkan untuk keluarga yang membutuhkan."
+      },
+      "stat2": {
+        "title": "Dukungan Taman Bermain",
+        "desc": "Membangun ruang bermain inklusif untuk anak-anak dengan Down Syndrome."
+      }
+    },
+    "store": {
+      "title": "Temukan Toko Kami",
+      "desc": "Rasakan kelembutan produk Loluna di toko terdekat Anda.",
+      "placeholder": "Masukkan nama kota Anda"
+    }
+  },
+  "footer": {
+    "slogan": "Perawatan Kulit Bayi Premium. Alami dan Teruji Klinis.",
+    "about": "Tentang Kami",
+    "company": "Profil Perusahaan",
+    "founder": "Kisah Pendiri",
+    "csr": "Peduli Sosial",
+    "product": "Produk",
+    "ingredients": "Bahan-bahan",
+    "tech": "Teknologi",
+    "store": "Lokasi Toko",
+    "contact": "Kontak",
+    "copyright": "© 2024 Loluna Perawatan Bayi Premium. Alami dan Teruji Klinis.",
+    "privacy": "Kebijakan Privasi",
+    "terms": "Syarat & Ketentuan"
+  },
+  "about": {
+    "hero": {
+      "badge": "Diciptakan dari Orang Tua untuk Orang Tua",
+      "title1": "Dipercaya 3 Juta Ibu untuk Perawatan",
+      "title2": "yang Aman.",
+      "desc": "Loluna lahir dari sebuah janji sederhana: memberikan perawatan kulit paling murni untuk setiap bayi. Perjalanan kami dimulai di dapur, didorong oleh cinta orang tua dan disempurnakan oleh sains klinis.",
+      "btn1": "Kisah Kami",
+      "btn2": "Eksplorasi Sains",
+      "stats": "Ibu Bahagia"
+    },
+    "vision": {
+      "title": "Fondasi Loluna",
+      "desc": "Didirikan berdasarkan prinsip transparansi, keamanan klinis, dan ikatan emosional antara orang tua dan anak.",
+      "heritage": {
+        "badge": "Warisan Kami",
+        "title": "Filosofi \"Utamakan Orang Tua\"",
+        "desc": "Setiap formula yang kami buat diuji pertama kali pada anak kami sendiri. Jika tidak cukup baik untuk keluarga kami, maka tidak cukup baik untuk keluarga Anda."
+      },
+      "purity": {
+        "title": "Kemurnian Klinis",
+        "desc": "Hipoalergenik dan teruji dermatologis dengan standar internasional tertinggi."
+      },
+      "nature": {
+        "title": "Esensi Alam",
+        "desc": "98% bahan nabati dari pertanian organik dan berkelanjutan di seluruh dunia."
+      },
+      "community": {
+        "title": "3 Juta Ibu Tidak Mungkin Salah",
+        "desc": "Dari tabung krim pelembap pertama kami hingga menjadi merek andalan, pertumbuhan kami didorong oleh rekomendasi nyata dari satu orang tua ke orang tua lainnya.",
+        "link": "Baca Cerita Komunitas"
+      }
+    },
+    "founder": {
+      "quote": "\"Kami menciptakan Loluna karena kami menginginkan dunia di mana orang tua tidak pernah harus memilih antara sains dan keamanan.\"",
+      "author": "— Dr. Elena Rossi, Pendiri & Ibu",
+      "title1": "Lahir dari",
+      "title2": "Kebutuhan.",
+      "p1": "Ketika putri kami lahir dengan kulit yang sangat sensitif, kami mencari ke seluruh penjuru untuk produk yang benar-benar aman, efektif, dan berkelanjutan. Kami menemukan bahwa sebagian besar produk terlalu klinis dan keras, atau terlalu organik namun tidak efektif.",
+      "p2": "Sebagai peneliti dan ibu, saya tahu pasti ada cara yang lebih baik. Saya menghabiskan dua tahun berkolaborasi dengan dokter kulit anak kelas dunia untuk menjembatani kesenjangan itu. Hasilnya adalah Loluna—merek yang merawat kulit bayi Anda dengan rasa hormat dan kepedulian yang sama seperti kami merawat kulit bayi kami sendiri.",
+      "stat1": "Didirikan di Jakarta",
+      "stat2": "Penghargaan Global"
+    },
+    "cta": {
+      "title": "Mulai Perjalanan Lembut Anda.",
+      "desc": "Bergabunglah dengan jutaan orang tua yang memercayakan rutinitas perawatan kulit bayi harian mereka pada Loluna. Rasakan perbedaan dari perawatan premium yang didukung sains.",
+      "button": "Belanja Produk Terlaris"
+    }
+  },
+  "products": {
+    "hero": {
+      "title1": "Perawatan Lembut",
+      "title2": "untuk Si",
+      "title3": "Kecil",
+      "desc": "Temukan rangkaian perawatan kulit kami yang teruji secara ilmiah dan terinspirasi dari alam, dirancang eksklusif untuk kulit bayi yang sensitif."
+    },
+    "categories": {
+      "all": "Semua Produk",
+      "bath": "Mandi & Sabun",
+      "moisturizers": "Pelembap",
+      "fragrance": "Wewangian"
+    },
+    "newsletter": {
+      "title": "Bergabung dengan Keluarga Loluna",
+      "desc": "Berlangganan untuk mendapatkan penawaran eksklusif, tips parenting, dan akses awal ke produk baru.",
+      "placeholder": "Alamat email Anda",
+      "button": "Berlangganan"
+    }
+  },
+  "productDetail": {
+    "breadcrumbs": {
+      "home": "Beranda",
+      "products": "Produk"
+    },
+    "badge": "Terlaris",
+    "reviews": "128 Ulasan",
+    "subtitle": "dengan 5X Ceramide & Natural Shea Butter",
+    "desc": "Berikan perlindungan 24 jam maksimal untuk si kecil. Losion bernutrisi tinggi kami meresap seketika tanpa rasa lengket, memperkuat lapisan pelindung kulit alami untuk mencegah kekeringan dan iritasi.",
+    "bullets": {
+      "hypoallergenic": "Hipoalergenik & pH Seimbang",
+      "freeFrom": "Bebas Paraben & Pewarna Buatan",
+      "crueltyFree": "Bebas Kekejaman (Cruelty-Free)"
+    },
+    "availableAt": "Tersedia Di",
+    "offlineStores": "Toko Offline",
+    "tabs": {
+      "description": {
+        "title": "Deskripsi",
+        "p1": "Loluna Face & Body Baby Lotion diformulasikan secara khusus untuk menangani kebutuhan unik lapisan pelindung kulit bayi baru lahir yang sedang berkembang.",
+        "p2": "Berbeda dengan kulit orang dewasa, kulit bayi kehilangan kelembapan hingga 5 kali lebih cepat, sehingga teknologi hidrasi mendalam kami sangat penting untuk mencegah kulit kering dan mengelupas. Diperkaya dengan perpaduan 5 ceramide esensial, natural shea butter, dan ekstrak oat, produk ini menciptakan lapisan pelindung yang bersirkulasi udara yang mengunci kelembapan selama 24 jam sekaligus menjaga kulit dari iritan lingkungan.",
+        "quote": "\"Meresap seketika ke dalam kulit tanpa meninggalkan residu lengket, sehingga Anda bisa langsung memakaikan baju pada bayi.\""
+      },
+      "ingredients": {
+        "title": "Bahan-bahan",
+        "ceramide": {
+          "title": "5X Ceramide Complex",
+          "desc": "Meniru lapisan lipid alami kulit untuk mengunci kelembapan dan melindungi dari iritan."
+        },
+        "shea": {
+          "title": "Natural Shea Butter",
+          "desc": "Menutrisi secara intens dan melembutkan bagian kulit yang kasar dengan segera."
+        },
+        "oat": {
+          "title": "Colloidal Oatmeal",
+          "desc": "Teruji klinis meredakan kemerahan, gatal, dan menenangkan kulit sensitif."
+        },
+        "full": "Daftar Bahan Lengkap"
+      },
+      "howto": {
+        "title": "Cara Penggunaan",
+        "step1": {
+          "title": "Bersihkan",
+          "desc": "Mulailah dengan kulit yang bersih dan dikeringkan handuk setelah mandi lembut."
+        },
+        "step2": {
+          "title": "Tuang",
+          "desc": "Pompa losion secukupnya ke telapak tangan Anda."
+        },
+        "step3": {
+          "title": "Pijat",
+          "desc": "Pijat lembut dengan gerakan menyapu ke seluruh wajah dan tubuh bayi."
+        }
+      }
+    }
+  },
+  "stores": {
+    "badge": "Toko Offline",
+    "title": "Tempat Menemukan Kami",
+    "desc": "Rasakan perawatan lembut Loluna secara langsung. Temukan rangkaian produk lengkap kami di mitra ritel tepercaya ini di seluruh Indonesia."
+  },
+  "contact": {
+    "badge": "Kami Ada Untuk Anda",
+    "title1": "Mari Tetap",
+    "title2": "Terhubung",
+    "desc": "Apakah Anda memiliki pertanyaan tentang formula kami, masalah dengan pesanan Anda, atau hanya ingin berbagi cerita Loluna Anda—kami siap mendengarkan.",
+    "email": {
+      "title": "Email Kami",
+      "desc": "Untuk pertanyaan umum dan dukungan:"
+    },
+    "call": {
+      "title": "Hubungi Kami",
+      "desc": "Senin-Jumat, 9 pagi hingga 6 sore (WIB)"
+    },
+    "location": {
+      "title": "Kantor Pusat",
+      "l1": "Loluna Care Tower, Lantai 12",
+      "l2": "Sudirman Central Business District",
+      "l3": "Jakarta, Indonesia 12190"
+    },
+    "form": {
+      "title": "Kirim Pesan",
+      "successTitle": "Pesan Terkirim!",
+      "successDesc": "Terima kasih telah menghubungi kami. Anggota tim perawatan kami akan menghubungi Anda kembali dalam waktu 24 jam.",
+      "sendAnother": "Kirim Pesan Lainnya",
+      "name": "Nama Lengkap",
+      "email": "Alamat Email",
+      "topic": "Topik",
+      "topicOptions": {
+        "placeholder": "Pilih topik...",
+        "order": "Pelacakan & Masalah Pesanan",
+        "product": "Pertanyaan Produk",
+        "wholesale": "Grosir & Kemitraan",
+        "other": "Pertanyaan Lainnya"
+      },
+      "message": "Pesan Anda",
+      "messagePlaceholder": "Bagaimana kami bisa membantu Anda hari ini?",
+      "sending": "Mengirim...",
+      "send": "Kirim Pesan"
+    }
+  },
+  "articles": {
+    "badge": "Jurnal Loluna",
+    "title1": "Wawasan untuk",
+    "title2": "Orang Tua Modern",
+    "desc": "Saran ahli, rincian ilmiah, dan cerita dari komunitas kami.",
+    "featured": "Pilihan",
+    "readFull": "Baca Artikel Lengkap",
+    "readMore": "Baca selengkapnya",
+    "loadMore": "Muat Lebih Banyak Artikel",
+    "categories": {
+      "all": "Semua Topik",
+      "science": "Sains & Pendidikan",
+      "parenting": "Tips Parenting",
+      "product": "Sorotan Produk",
+      "community": "Komunitas"
+    },
+    "list": [
+      {
+        "title": "Memahami Kulit Bayi: Mengapa Butuh Perawatan Khusus",
+        "excerpt": "Kupas tuntas anatomi kulit bayi baru lahir dan mengapa ia kehilangan kelembapan hingga 5 kali lebih cepat dari kulit orang dewasa.",
+        "category": "Sains & Pendidikan"
+      },
+      {
+        "title": "Perbedaan 5X Ceramide",
+        "excerpt": "Apa itu ceramide, dan mengapa tim klinis kami memilih campuran 5-kompleks untuk losion andalan kami?",
+        "category": "Sorotan Produk"
+      },
+      {
+        "title": "Membangun Rutinitas Tidur yang Menenangkan",
+        "excerpt": "Dokter anak membagikan tips terbaik mereka untuk menggunakan waktu mandi dan pijat untuk membantu bayi Anda tidur sepanjang malam.",
+        "category": "Tips Parenting"
+      },
+      {
+        "title": "Mengungkap Eksim pada Bayi Baru Lahir",
+        "excerpt": "Cara mengenali tanda-tanda awal eksim dan bahan lembut terbaik untuk menenangkan kekambuhan secara alami.",
+        "category": "Sains & Pendidikan"
+      },
+      {
+        "title": "Janji Keberlanjutan Kami: 2025 dan Seterusnya",
+        "excerpt": "Baca tentang komitmen kami untuk mengurangi limbah plastik dan memastikan bahan-bahan kami bersumber secara etis.",
+        "category": "Di Balik Merek"
+      },
+      {
+        "title": "Panduan Perlindungan Matahari untuk Bayi",
+        "excerpt": "Kapan aman menggunakan tabir surya pada bayi Anda? Panduan komprehensif untuk keamanan di musim panas.",
+        "category": "Tips Parenting"
+      }
+    ]
+  }
+}

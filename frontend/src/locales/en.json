@@ -1,0 +1,310 @@
+{
+  "nav": {
+    "about": "About Us",
+    "products": "Products",
+    "stores": "Stores",
+    "articles": "Articles",
+    "contact": "Contact Us",
+    "search": "Search...",
+    "language": "English",
+    "languageSwitch": "Switch to Bahasa Indonesia"
+  },
+  "hero": {
+    "title1": "Gentle Care",
+    "title2": "for Your",
+    "titleHighlight": "Little One",
+    "subtitle": "Discover our scientifically proven, nature-inspired skincare range designed exclusively for baby's delicate skin.",
+    "ctaPrimary": "Shop Collection",
+    "ctaSecondary": "Our Ingredients",
+    "badge": "New Formula with 5X Ceramide"
+  },
+  "home": {
+    "features": {
+      "hypoallergenic": {
+        "title": "Hypoallergenic",
+        "desc": "Carefully crafted to minimize allergy risks."
+      },
+      "dermatologically": {
+        "title": "Dermatologically Tested",
+        "desc": "Proven safe for sensitive baby skin."
+      },
+      "newborn": {
+        "title": "Safe for Newborn",
+        "desc": "Gentle enough from day one."
+      }
+    },
+    "spotlight": {
+      "badge": "Best Seller",
+      "title1": "Face & Body Baby Lotion",
+      "title2": "with 5X Ceramide",
+      "desc": "Our clinically backed formula hydrates and strengthens the skin barrier using 5 essential ceramides. It's the ultimate protection for your baby's delicate complexion, crafted after years of research in Australian laboratories.",
+      "point1": "24-hour deep hydration",
+      "point2": "Soothes dry and itchy patches",
+      "point3": "Non-greasy, fast-absorbing texture",
+      "button": "Discover the Magic"
+    },
+    "science": {
+      "title": "Science Meets Gentleness",
+      "desc": "We bridge the gap between laboratory precision and maternal instinct.",
+      "card1": {
+        "title": "Tested in Australia",
+        "desc": "World-class standards for every drop."
+      },
+      "card2": {
+        "title": "Modern Skincare Tech",
+        "desc": "Innovation for the next generation."
+      }
+    },
+    "csr": {
+      "badge": "Community",
+      "title": "Caring for Children and Families",
+      "desc": "Our commitment goes beyond skincare. We believe every child deserves a healthy start in life, which is why we actively support communities across the region.",
+      "stat1": {
+        "title": "150,000+",
+        "desc": "Skincare products donated to families in need."
+      },
+      "stat2": {
+        "title": "Playground Support",
+        "desc": "Developing inclusive spaces for children with Down Syndrome."
+      }
+    },
+    "store": {
+      "title": "Find Our Stores",
+      "desc": "Experience the gentleness of Loluna at a retailer near you.",
+      "placeholder": "Enter your city or zip code"
+    }
+  },
+  "footer": {
+    "slogan": "Premium Baby Skincare. Gentle by Nature, Proven by Science.",
+    "about": "About Us",
+    "company": "Company Profile",
+    "founder": "Founder Story",
+    "csr": "CSR",
+    "product": "Product",
+    "ingredients": "Ingredients",
+    "tech": "Technology",
+    "store": "Store Locator",
+    "contact": "Contact",
+    "copyright": "© 2024 Loluna Premium Baby Skincare. Gentle by Nature, Proven by Science.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "about": {
+    "hero": {
+      "badge": "Created by Parent to Parent",
+      "title1": "Trusted by 3 Million Moms for Gentle,",
+      "title2": "Safe Care.",
+      "desc": "Loluna was born from a simple promise: to provide every baby with the purest skincare possible. Our journey began in a kitchen, driven by a parent's love and perfected by clinical science.",
+      "btn1": "Our Story",
+      "btn2": "Explore Science",
+      "stats": "Happy Moms"
+    },
+    "vision": {
+      "title": "The Loluna Foundation",
+      "desc": "Founded on the principles of transparency, clinical safety, and the emotional connection between parent and child.",
+      "heritage": {
+        "badge": "Our Heritage",
+        "title": "The \"Parent-First\" Philosophy",
+        "desc": "Every formula we create is tested first on our own children. If it isn't good enough for our family, it isn't good enough for yours."
+      },
+      "purity": {
+        "title": "Clinical Purity",
+        "desc": "Hypoallergenic and dermatologically tested to the highest international standards."
+      },
+      "nature": {
+        "title": "Nature's Essence",
+        "desc": "98% plant-based ingredients sourced from sustainable, organic farms across the globe."
+      },
+      "community": {
+        "title": "3 Million Moms Can't Be Wrong",
+        "desc": "From our first tube of moisturizing cream to becoming a household name, our growth is fueled by real recommendations from one parent to another.",
+        "link": "Read Community Stories"
+      }
+    },
+    "founder": {
+      "quote": "\"We created Loluna because we wanted a world where parents never have to choose between science and safety.\"",
+      "author": "— Dr. Elena Rossi, Founder & Mom",
+      "title1": "Born from",
+      "title2": "Necessity.",
+      "p1": "When our daughter was born with extremely sensitive skin, we scoured every shelf for products that were truly safe, effective, and sustainable. We found that most products were either too clinical and harsh, or too organic and ineffective.",
+      "p2": "As a researcher and a mother, I knew there had to be a better way. I spent two years collaborating with world-class pediatric dermatologists to bridge that gap. The result was Loluna—a brand that treats your baby's skin with the same reverence and care we give our own.",
+      "stat1": "Founded in Jakarta",
+      "stat2": "Global Awards"
+    },
+    "cta": {
+      "title": "Start Your Gentle Journey.",
+      "desc": "Join the millions of parents who trust Loluna for their baby's daily skincare routine. Experience the difference of premium, science-backed care.",
+      "button": "Shop Best Sellers"
+    }
+  },
+  "products": {
+    "hero": {
+      "title1": "Gentle Care",
+      "title2": "for Your",
+      "title3": "Little One",
+      "desc": "Discover our scientifically proven, nature-inspired skincare range designed exclusively for baby's delicate skin."
+    },
+    "categories": {
+      "all": "All Products",
+      "bath": "Bath & Wash",
+      "moisturizers": "Moisturizers",
+      "fragrance": "Fragrance"
+    },
+    "newsletter": {
+      "title": "Join the Loluna Family",
+      "desc": "Subscribe for exclusive offers, parenting tips, and new product early access.",
+      "placeholder": "Your email address",
+      "button": "Subscribe"
+    }
+  },
+  "productDetail": {
+    "breadcrumbs": {
+      "home": "Home",
+      "products": "Products"
+    },
+    "badge": "Best Seller",
+    "reviews": "128 Reviews",
+    "subtitle": "with 5X Ceramide & Natural Shea Butter",
+    "desc": "Provide ultimate 24-hour protection for your little one. Our ultra-nourishing lotion absorbs instantly without any greasy residue, fortifying the natural skin barrier to prevent dryness and irritation.",
+    "bullets": {
+      "hypoallergenic": "Hypoallergenic & pH Balanced",
+      "freeFrom": "Free from Parabens & Artificial Dyes",
+      "crueltyFree": "Cruelty-Free"
+    },
+    "availableAt": "Available At",
+    "offlineStores": "Offline Stores",
+    "tabs": {
+      "description": {
+        "title": "Description",
+        "p1": "Our Face & Body Baby Lotion is specifically formulated to handle the unique needs of a newborn's developing skin barrier.",
+        "p2": "Unlike adult skin, baby skin loses moisture up to 5 times faster, making our deep-hydration technology critical for preventing dryness and flaking. Infused with a blend of 5 essential ceramides, natural shea butter, and oat extract, it creates a breathable, protective layer that locks in moisture for 24 hours while keeping environmental irritants out.",
+        "quote": "\"Melts instantly into the skin without leaving a greasy or sticky residue, allowing you to dress your baby immediately.\""
+      },
+      "ingredients": {
+        "title": "Ingredients",
+        "ceramide": {
+          "title": "5X Ceramide Complex",
+          "desc": "Mimics the skin's natural lipid barrier to lock in moisture and protect against irritants."
+        },
+        "shea": {
+          "title": "Natural Shea Butter",
+          "desc": "Intensely nourishes and softens rough patches immediately."
+        },
+        "oat": {
+          "title": "Colloidal Oatmeal",
+          "desc": "Clinically proven to soothe redness, itching, and calm sensitive skin."
+        },
+        "full": "Full Ingredient List"
+      },
+      "howto": {
+        "title": "How to Use",
+        "step1": {
+          "title": "Cleanse",
+          "desc": "Start with clean, towel-dried skin after a gentle bath."
+        },
+        "step2": {
+          "title": "Dispense",
+          "desc": "Pump a generous amount of lotion into your hands."
+        },
+        "step3": {
+          "title": "Massage",
+          "desc": "Gently massage in sweeping motions over face and body."
+        }
+      }
+    }
+  },
+  "stores": {
+    "badge": "Offline Stores",
+    "title": "Where to Find Us",
+    "desc": "Experience Loluna's gentle care in person. Find our full range of products at these trusted retail partners across Indonesia."
+  },
+  "contact": {
+    "badge": "We're Here for You",
+    "title1": "Let's Keep in",
+    "title2": "Touch",
+    "desc": "Whether you have a question about our formulas, an issue with your order, or just want to share your Loluna story—we're all ears.",
+    "email": {
+      "title": "Email Us",
+      "desc": "For general inquiries and support:"
+    },
+    "call": {
+      "title": "Call Us",
+      "desc": "Mon-Fri, 9am to 6pm (WIB)"
+    },
+    "location": {
+      "title": "Headquarters",
+      "l1": "Loluna Care Tower, 12th Floor",
+      "l2": "Sudirman Central Business District",
+      "l3": "Jakarta, Indonesia 12190"
+    },
+    "form": {
+      "title": "Send a Message",
+      "successTitle": "Message Sent!",
+      "successDesc": "Thank you for reaching out. A member of our care team will get back to you within 24 hours.",
+      "sendAnother": "Send Another Message",
+      "name": "Full Name",
+      "email": "Email Address",
+      "topic": "Topic",
+      "topicOptions": {
+        "placeholder": "Select a topic...",
+        "order": "Order Tracking & Issues",
+        "product": "Product Question",
+        "wholesale": "Wholesale & Partnership",
+        "other": "Other Inquiry"
+      },
+      "message": "Your Message",
+      "messagePlaceholder": "How can we help you today?",
+      "sending": "Sending...",
+      "send": "Send Message"
+    }
+  },
+  "articles": {
+    "badge": "Loluna Journal",
+    "title1": "Insights for the",
+    "title2": "Modern Parent",
+    "desc": "Expert advice, scientific breakdowns, and stories from our community.",
+    "featured": "Featured",
+    "readFull": "Read Full Article",
+    "readMore": "Read more",
+    "loadMore": "Load More Articles",
+    "categories": {
+      "all": "All Topics",
+      "science": "Science & Education",
+      "parenting": "Parenting Tips",
+      "product": "Product Spotlight",
+      "community": "Community"
+    },
+    "list": [
+      {
+        "title": "Understanding Baby Skin: Why It Needs Special Care",
+        "excerpt": "A deep dive into the anatomy of newborn skin and why it loses moisture up to 5 times faster than adult skin.",
+        "category": "Science & Education"
+      },
+      {
+        "title": "The 5X Ceramide Difference",
+        "excerpt": "What are ceramides, and why did our clinical team choose a 5-complex blend for our signature lotion?",
+        "category": "Product Spotlight"
+      },
+      {
+        "title": "Building a Calming Bedtime Routine",
+        "excerpt": "Pediatricians share their top tips for using bath time and massage to help your baby sleep through the night.",
+        "category": "Parenting Tips"
+      },
+      {
+        "title": "Decoding Eczema in Newborns",
+        "excerpt": "How to spot the early signs of eczema and the best gentle ingredients to soothe flare-ups naturally.",
+        "category": "Science & Education"
+      },
+      {
+        "title": "Our Sustainability Pledge: 2025 and Beyond",
+        "excerpt": "Read about our commitment to reducing plastic waste and ensuring our ingredients are ethically sourced.",
+        "category": "Behind the Brand"
+      },
+      {
+        "title": "Navigating Sun Protection for Infants",
+        "excerpt": "When is it safe to use sunscreen on your baby? A comprehensive guide for summer safety.",
+        "category": "Parenting Tips"
+      }
+    ]
+  }
+}

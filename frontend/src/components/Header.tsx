@@ -55,24 +55,30 @@ export default function Header() {
           <div className="relative hidden md:block">
             <button 
               onClick={() => setIsLangOpen(!isLangOpen)}
-              className="p-2 text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1"
+              className="py-2 px-3 rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors flex items-center justify-center gap-2"
             >
-              <span className="material-symbols-outlined">language</span>
-              <span className="text-sm font-bold uppercase">{language}</span>
+              <span className="material-symbols-outlined text-[22px] leading-none flex items-center">language</span>
+              <span className="text-sm font-bold uppercase leading-none flex items-center pt-[2px]">{language}</span>
             </button>
             {isLangOpen && (
-              <div className="absolute top-full right-0 mt-2 bg-surface rounded-xl shadow-lg border border-outline-variant/20 py-2 w-40 overflow-hidden flex flex-col z-50">
+              <div className="absolute top-full right-0 mt-2 bg-surface rounded-xl shadow-lg border border-outline-variant/20 py-2 w-48 overflow-hidden flex flex-col z-50">
                 <button 
                   onClick={() => { setLanguage("en"); setIsLangOpen(false); }}
-                  className={`px-4 py-2 text-left text-sm hover:bg-surface-container transition-colors ${language === 'en' ? 'font-bold text-primary bg-primary/5' : ''}`}
+                  className={`px-4 py-2 text-left text-sm hover:bg-surface-container transition-colors flex items-center gap-3 ${language === 'en' ? 'font-bold text-primary bg-primary/5' : ''}`}
                 >
-                  English
+                  <img src="/images/flag/en.png" alt="English flag" className="w-5 h-5 object-cover rounded-full shadow-sm" /> English
                 </button>
                 <button 
                   onClick={() => { setLanguage("id"); setIsLangOpen(false); }}
-                  className={`px-4 py-2 text-left text-sm hover:bg-surface-container transition-colors ${language === 'id' ? 'font-bold text-primary bg-primary/5' : ''}`}
+                  className={`px-4 py-2 text-left text-sm hover:bg-surface-container transition-colors flex items-center gap-3 ${language === 'id' ? 'font-bold text-primary bg-primary/5' : ''}`}
                 >
-                  Bahasa Indonesia
+                  <img src="/images/flag/id.png" alt="Indonesian flag" className="w-5 h-5 object-cover rounded-full shadow-sm" /> Bahasa Indonesia
+                </button>
+                <button 
+                  onClick={() => { setLanguage("vi"); setIsLangOpen(false); }}
+                  className={`px-4 py-2 text-left text-sm hover:bg-surface-container transition-colors flex items-center gap-3 ${language === 'vi' ? 'font-bold text-primary bg-primary/5' : ''}`}
+                >
+                  <img src="/images/flag/vi.png" alt="Vietnamese flag" className="w-5 h-5 object-cover rounded-full shadow-sm" /> Tiếng Việt
                 </button>
               </div>
             )}

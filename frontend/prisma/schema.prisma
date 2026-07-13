@@ -1,0 +1,88 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Page {
+  id        String    @id @default(uuid())
+  name      String
+  slug      String    @unique
+  icon      String
+  updatedAt DateTime  @updatedAt
+  sections  Section[]
+}
+
+model Section {
+  id        String   @id @default(uuid())
+  name      String
+  pageId    String
+  page      Page     @relation(fields: [pageId], references: [id])
+  status    String   @default("published")
+  fields    String   // Store fields as JSON string
+  updatedAt DateTime @updatedAt
+}
+
+model Product {
+  id          String   @id @default(uuid())
+  name        String
+  price       Float
+  shortDesc   String
+  fullDesc    String
+  images      String   // JSON string of URLs
+  category    String
+  stock       Int
+  badge       String
+  featured    Boolean  @default(false)
+  buttonLink  String
+  slug        String   @unique
+  status      String   @default("published")
+  seoTitle    String
+  seoDesc     String
+  seoKeywords String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model MediaItem {
+  id         String   @id @default(uuid())
+  name       String
+  url        String
+  category   String
+  alt        String
+  size       Int
+  type       String
+  uploadedAt DateTime @default(now())
+}
+
+model ActivityLog {
+  id        String   @id @default(uuid())
+  action    String
+  target    String
+  detail    String
+  timestamp DateTime @default(now())
+}
+
+model Admin {
+  id        String   @id @default(uuid())
+  username  String   @unique
+  password  String   // Hashed password
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Article {
+  id          String   @id @default(uuid())
+  title       String
+  slug        String   @unique
+  content     String   // Plain text or HTML/Markdown
+  coverImage  String
+  category    String
+  author      String   @default("Admin")
+  status      String   @default("draft") // draft or published
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}

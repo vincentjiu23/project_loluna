@@ -1,0 +1,310 @@
+{
+  "nav": {
+    "about": "Về Chúng Tôi",
+    "products": "Sản Phẩm",
+    "stores": "Cửa Hàng",
+    "articles": "Bài Viết",
+    "contact": "Liên Hệ",
+    "search": "Tìm kiếm...",
+    "language": "Tiếng Việt",
+    "languageSwitch": "Chuyển sang Tiếng Việt"
+  },
+  "hero": {
+    "title1": "Chăm Sóc Dịu Nhẹ",
+    "title2": "cho",
+    "titleHighlight": "Bé Yêu",
+    "subtitle": "Khám phá dòng sản phẩm chăm sóc da lấy cảm hứng từ thiên nhiên, đã được chứng minh khoa học, thiết kế độc quyền cho làn da mỏng manh của bé.",
+    "ctaPrimary": "Mua Sắm Ngay",
+    "ctaSecondary": "Thành Phần Của Chúng Tôi",
+    "badge": "Công Thức Mới Với 5X Ceramide"
+  },
+  "home": {
+    "features": {
+      "hypoallergenic": {
+        "title": "Không Gây Dị Ứng",
+        "desc": "Được chế tạo cẩn thận để giảm thiểu rủi ro dị ứng."
+      },
+      "dermatologically": {
+        "title": "Đã Kiểm Nghiệm Da Liễu",
+        "desc": "Được chứng minh an toàn cho da nhạy cảm của bé."
+      },
+      "newborn": {
+        "title": "An Toàn Cho Trẻ Sơ Sinh",
+        "desc": "Đủ dịu nhẹ từ ngày đầu tiên."
+      }
+    },
+    "spotlight": {
+      "badge": "Bán Chạy Nhất",
+      "title1": "Sữa Dưỡng Thể & Da Mặt Cho Bé",
+      "title2": "với 5X Ceramide",
+      "desc": "Công thức được chứng minh lâm sàng giúp cấp ẩm và củng cố hàng rào bảo vệ da với 5 loại ceramide thiết yếu. Đây là sự bảo vệ tối ưu cho làn da mỏng manh của bé, được chế tạo sau nhiều năm nghiên cứu trong các phòng thí nghiệm của Úc.",
+      "point1": "Dưỡng ẩm sâu 24 giờ",
+      "point2": "Làm dịu các vùng da khô và ngứa",
+      "point3": "Kết cấu không nhờn rít, thấm nhanh",
+      "button": "Khám Phá Điều Kỳ Diệu"
+    },
+    "science": {
+      "title": "Khoa Học Kết Hợp Sự Dịu Nhẹ",
+      "desc": "Chúng tôi kết nối khoảng cách giữa sự chính xác của phòng thí nghiệm và bản năng của người mẹ.",
+      "card1": {
+        "title": "Kiểm Nghiệm Tại Úc",
+        "desc": "Tiêu chuẩn đẳng cấp thế giới cho từng giọt."
+      },
+      "card2": {
+        "title": "Công Nghệ Chăm Sóc Da Hiện Đại",
+        "desc": "Đổi mới cho thế hệ tương lai."
+      }
+    },
+    "csr": {
+      "badge": "Cộng Đồng",
+      "title": "Chăm Sóc Trẻ Em và Gia Đình",
+      "desc": "Cam kết của chúng tôi vượt ra ngoài chăm sóc da. Chúng tôi tin rằng mỗi đứa trẻ đều xứng đáng có một khởi đầu khỏe mạnh trong cuộc sống, đó là lý do tại sao chúng tôi tích cực hỗ trợ các cộng đồng trên khắp khu vực.",
+      "stat1": {
+        "title": "150,000+",
+        "desc": "Sản phẩm chăm sóc da được quyên góp cho các gia đình khó khăn."
+      },
+      "stat2": {
+        "title": "Hỗ Trợ Sân Chơi",
+        "desc": "Phát triển các không gian hòa nhập cho trẻ em mắc Hội chứng Down."
+      }
+    },
+    "store": {
+      "title": "Tìm Cửa Hàng Của Chúng Tôi",
+      "desc": "Trải nghiệm sự dịu nhẹ của Loluna tại cửa hàng bán lẻ gần bạn.",
+      "placeholder": "Nhập thành phố hoặc mã bưu điện của bạn"
+    }
+  },
+  "footer": {
+    "slogan": "Chăm Sóc Da Cao Cấp Cho Bé. Dịu Nhẹ Từ Thiên Nhiên, Được Chứng Minh Khoa Học.",
+    "about": "Về Chúng Tôi",
+    "company": "Hồ Sơ Công Ty",
+    "founder": "Câu Chuyện Người Sáng Lập",
+    "csr": "Trách Nhiệm Xã Hội",
+    "product": "Sản Phẩm",
+    "ingredients": "Thành Phần",
+    "tech": "Công Nghệ",
+    "store": "Hệ Thống Cửa Hàng",
+    "contact": "Liên Hệ",
+    "copyright": "© 2024 Loluna. Chăm Sóc Da Cao Cấp Cho Bé. Dịu Nhẹ Từ Thiên Nhiên, Được Chứng Minh Khoa Học.",
+    "privacy": "Chính Sách Bảo Mật",
+    "terms": "Điều Khoản Dịch Vụ"
+  },
+  "about": {
+    "hero": {
+      "badge": "Tạo Bởi Các Phụ Huynh, Dành Cho Các Phụ Huynh",
+      "title1": "Được 3 Triệu Bà Mẹ Tin Dùng Vì Sự",
+      "title2": "Chăm Sóc Dịu Nhẹ, An Toàn.",
+      "desc": "Loluna ra đời từ một lời hứa đơn giản: cung cấp cho mọi em bé sự chăm sóc da thuần khiết nhất có thể. Hành trình của chúng tôi bắt đầu từ trong nhà bếp, được thúc đẩy bởi tình yêu của cha mẹ và hoàn thiện bởi khoa học lâm sàng.",
+      "btn1": "Câu Chuyện Của Chúng Tôi",
+      "btn2": "Khám Phá Khoa Học",
+      "stats": "Bà Mẹ Hạnh Phúc"
+    },
+    "vision": {
+      "title": "Nền Tảng Loluna",
+      "desc": "Được xây dựng dựa trên các nguyên tắc minh bạch, an toàn lâm sàng và sự kết nối cảm xúc giữa cha mẹ và con cái.",
+      "heritage": {
+        "badge": "Di Sản Của Chúng Tôi",
+        "title": "Triết Lý \"Ưu Tiên Cha Mẹ\"",
+        "desc": "Mọi công thức chúng tôi tạo ra đều được thử nghiệm đầu tiên trên chính con cái của chúng tôi. Nếu nó không đủ tốt cho gia đình chúng tôi, nó sẽ không đủ tốt cho gia đình bạn."
+      },
+      "purity": {
+        "title": "Độ Tinh Khiết Lâm Sàng",
+        "desc": "Không gây dị ứng và được kiểm nghiệm da liễu theo tiêu chuẩn quốc tế cao nhất."
+      },
+      "nature": {
+        "title": "Tinh Túy Thiên Nhiên",
+        "desc": "98% thành phần có nguồn gốc thực vật từ các trang trại hữu cơ bền vững trên toàn cầu."
+      },
+      "community": {
+        "title": "3 Triệu Bà Mẹ Không Thể Sai",
+        "desc": "Từ tuýp kem dưỡng ẩm đầu tiên cho đến khi trở thành một cái tên quen thuộc, sự phát triển của chúng tôi được thúc đẩy bởi những lời khuyên chân thực từ những người làm cha mẹ.",
+        "link": "Đọc Câu Chuyện Cộng Đồng"
+      }
+    },
+    "founder": {
+      "quote": "\"Chúng tôi tạo ra Loluna vì chúng tôi muốn một thế giới nơi các bậc cha mẹ không bao giờ phải lựa chọn giữa khoa học và sự an toàn.\"",
+      "author": "— Bác sĩ Elena Rossi, Nhà sáng lập & Làm mẹ",
+      "title1": "Sinh ra từ",
+      "title2": "Sự Cần Thiết.",
+      "p1": "Khi con gái chúng tôi sinh ra với làn da cực kỳ nhạy cảm, chúng tôi đã lùng sục mọi quầy hàng để tìm các sản phẩm thực sự an toàn, hiệu quả và bền vững. Chúng tôi thấy rằng hầu hết các sản phẩm hoặc quá lâm sàng và thô bạo, hoặc quá hữu cơ và không hiệu quả.",
+      "p2": "Là một nhà nghiên cứu và một người mẹ, tôi biết phải có một cách tốt hơn. Tôi đã dành hai năm hợp tác với các bác sĩ da liễu nhi khoa đẳng cấp thế giới để thu hẹp khoảng cách đó. Kết quả là Loluna—một thương hiệu chăm sóc làn da của bé bằng sự tôn kính và nâng niu như chúng ta dành cho chính mình.",
+      "stat1": "Thành lập tại Jakarta",
+      "stat2": "Giải thưởng toàn cầu"
+    },
+    "cta": {
+      "title": "Bắt Đầu Hành Trình Dịu Nhẹ Của Bạn.",
+      "desc": "Tham gia cùng hàng triệu phụ huynh tin tưởng Loluna cho thói quen chăm sóc da hàng ngày của bé. Trải nghiệm sự khác biệt của sự chăm sóc cao cấp, dựa trên khoa học.",
+      "button": "Mua Sản Phẩm Bán Chạy Nhất"
+    }
+  },
+  "products": {
+    "hero": {
+      "title1": "Chăm Sóc Dịu Nhẹ",
+      "title2": "cho",
+      "title3": "Bé Yêu Của Bạn",
+      "desc": "Khám phá dòng sản phẩm chăm sóc da lấy cảm hứng từ thiên nhiên, đã được chứng minh khoa học thiết kế độc quyền cho làn da mỏng manh của bé."
+    },
+    "categories": {
+      "all": "Tất Cả Sản Phẩm",
+      "bath": "Tắm & Gội",
+      "moisturizers": "Kem Dưỡng Ẩm",
+      "fragrance": "Nước Hoa"
+    },
+    "newsletter": {
+      "title": "Tham Gia Gia Đình Loluna",
+      "desc": "Đăng ký để nhận các ưu đãi độc quyền, mẹo nuôi dạy con và quyền truy cập sớm sản phẩm mới.",
+      "placeholder": "Địa chỉ email của bạn",
+      "button": "Đăng Ký"
+    }
+  },
+  "productDetail": {
+    "breadcrumbs": {
+      "home": "Trang Chủ",
+      "products": "Sản Phẩm"
+    },
+    "badge": "Bán Chạy Nhất",
+    "reviews": "128 Đánh Giá",
+    "subtitle": "với 5X Ceramide & Bơ Hạt Mỡ Tự Nhiên",
+    "desc": "Cung cấp sự bảo vệ 24 giờ tối ưu cho bé yêu của bạn. Sữa dưỡng siêu nuôi dưỡng của chúng tôi thẩm thấu ngay lập tức mà không để lại cặn nhờn, củng cố hàng rào bảo vệ da tự nhiên để ngăn ngừa khô và kích ứng.",
+    "bullets": {
+      "hypoallergenic": "Không Gây Dị Ứng & Cân Bằng pH",
+      "freeFrom": "Không chứa Paraben & Thuốc nhuộm nhân tạo",
+      "crueltyFree": "Không thử nghiệm trên động vật"
+    },
+    "availableAt": "Có sẵn tại",
+    "offlineStores": "Cửa hàng Offline",
+    "tabs": {
+      "description": {
+        "title": "Mô Tả",
+        "p1": "Sữa Dưỡng Thể & Da Mặt Cho Bé của chúng tôi được thiết kế đặc biệt để xử lý các nhu cầu riêng biệt của hàng rào bảo vệ da đang phát triển ở trẻ sơ sinh.",
+        "p2": "Không giống như da người lớn, da trẻ sơ sinh mất độ ẩm nhanh hơn gấp 5 lần, làm cho công nghệ cấp ẩm sâu của chúng tôi trở nên quan trọng trong việc ngăn ngừa khô và bong tróc. Được pha trộn với 5 loại ceramide thiết yếu, bơ hạt mỡ tự nhiên và chiết xuất yến mạch, nó tạo ra một lớp bảo vệ thoáng khí khóa độ ẩm trong 24 giờ đồng thời ngăn chặn các chất gây kích ứng từ môi trường.",
+        "quote": "\"Thẩm thấu ngay lập tức vào da mà không để lại cặn nhờn hoặc dính, cho phép bạn mặc quần áo cho bé ngay lập tức.\""
+      },
+      "ingredients": {
+        "title": "Thành Phần",
+        "ceramide": {
+          "title": "Phức hợp 5X Ceramide",
+          "desc": "Mô phỏng hàng rào lipid tự nhiên của da để khóa ẩm và bảo vệ khỏi chất kích ứng."
+        },
+        "shea": {
+          "title": "Bơ Hạt Mỡ Tự Nhiên",
+          "desc": "Nuôi dưỡng chuyên sâu và làm mềm các vùng da khô ráp ngay lập tức."
+        },
+        "oat": {
+          "title": "Bột Yến Mạch Colloidal",
+          "desc": "Được chứng minh lâm sàng giúp làm dịu mẩn đỏ, ngứa và làm dịu da nhạy cảm."
+        },
+        "full": "Danh Sách Thành Phần Đầy Đủ"
+      },
+      "howto": {
+        "title": "Cách Sử Dụng",
+        "step1": {
+          "title": "Làm Sạch",
+          "desc": "Bắt đầu với làn da sạch, lau khô bằng khăn sau khi tắm dịu nhẹ."
+        },
+        "step2": {
+          "title": "Bơm Kem",
+          "desc": "Bơm một lượng kem dưỡng dồi dào vào tay bạn."
+        },
+        "step3": {
+          "title": "Massage",
+          "desc": "Nhẹ nhàng massage theo chuyển động rộng qua mặt và cơ thể."
+        }
+      }
+    }
+  },
+  "stores": {
+    "badge": "Cửa Hàng Offline",
+    "title": "Nơi Tìm Chúng Tôi",
+    "desc": "Trực tiếp trải nghiệm sự chăm sóc dịu nhẹ của Loluna. Tìm toàn bộ sản phẩm của chúng tôi tại các đối tác bán lẻ đáng tin cậy này trên khắp Indonesia."
+  },
+  "contact": {
+    "badge": "Chúng Tôi Ở Đây Cho Bạn",
+    "title1": "Hãy Giữ",
+    "title2": "Liên Lạc",
+    "desc": "Cho dù bạn có câu hỏi về công thức của chúng tôi, vấn đề với đơn đặt hàng hay chỉ muốn chia sẻ câu chuyện Loluna của bạn—chúng tôi luôn lắng nghe.",
+    "email": {
+      "title": "Gửi Email",
+      "desc": "Đối với các thắc mắc và hỗ trợ chung:"
+    },
+    "call": {
+      "title": "Gọi Cho Chúng Tôi",
+      "desc": "Thứ 2 - Thứ 6, 9am đến 6pm (WIB)"
+    },
+    "location": {
+      "title": "Trụ Sở Chính",
+      "l1": "Tòa nhà Loluna Care, Tầng 12",
+      "l2": "Khu thương mại trung tâm Sudirman",
+      "l3": "Jakarta, Indonesia 12190"
+    },
+    "form": {
+      "title": "Gửi Tin Nhắn",
+      "successTitle": "Đã Gửi Tin Nhắn!",
+      "successDesc": "Cảm ơn bạn đã liên hệ. Một thành viên của nhóm chăm sóc của chúng tôi sẽ liên hệ lại với bạn trong vòng 24 giờ.",
+      "sendAnother": "Gửi Tin Nhắn Khác",
+      "name": "Họ và Tên",
+      "email": "Địa Chỉ Email",
+      "topic": "Chủ Đề",
+      "topicOptions": {
+        "placeholder": "Chọn một chủ đề...",
+        "order": "Theo Dõi Đơn Hàng & Vấn Đề",
+        "product": "Câu Hỏi Sản Phẩm",
+        "wholesale": "Bán Buôn & Hợp Tác",
+        "other": "Yêu Cầu Khác"
+      },
+      "message": "Tin Nhắn Của Bạn",
+      "messagePlaceholder": "Chúng tôi có thể giúp gì cho bạn hôm nay?",
+      "sending": "Đang Gửi...",
+      "send": "Gửi Tin Nhắn"
+    }
+  },
+  "articles": {
+    "badge": "Tạp Chí Loluna",
+    "title1": "Góc Nhìn Cho",
+    "title2": "Cha Mẹ Hiện Đại",
+    "desc": "Lời khuyên của chuyên gia, phân tích khoa học và câu chuyện từ cộng đồng của chúng tôi.",
+    "featured": "Nổi Bật",
+    "readFull": "Đọc Toàn Bộ Bài Viết",
+    "readMore": "Đọc thêm",
+    "loadMore": "Tải Thêm Bài Viết",
+    "categories": {
+      "all": "Tất Cả Chủ Đề",
+      "science": "Khoa Học & Giáo Dục",
+      "parenting": "Mẹo Nuôi Dạy Trẻ",
+      "product": "Tiêu Điểm Sản Phẩm",
+      "community": "Cộng Đồng"
+    },
+    "list": [
+      {
+        "title": "Hiểu Về Làn Da Của Bé: Tại Sao Nó Cần Chăm Sóc Đặc Biệt",
+        "excerpt": "Đi sâu vào giải phẫu da trẻ sơ sinh và lý do tại sao nó mất độ ẩm nhanh gấp 5 lần so với da người lớn.",
+        "category": "Khoa Học & Giáo Dục"
+      },
+      {
+        "title": "Sự Khác Biệt Của 5X Ceramide",
+        "excerpt": "Ceramide là gì, và tại sao nhóm lâm sàng của chúng tôi chọn hỗn hợp 5 phức hợp cho loại sữa dưỡng đặc trưng của chúng tôi?",
+        "category": "Tiêu Điểm Sản Phẩm"
+      },
+      {
+        "title": "Xây Dựng Thói Quen Nhẹ Nhàng Khi Đi Ngủ",
+        "excerpt": "Các bác sĩ nhi khoa chia sẻ những mẹo hàng đầu của họ về cách sử dụng thời gian tắm và massage để giúp bé ngủ suốt đêm.",
+        "category": "Mẹo Nuôi Dạy Trẻ"
+      },
+      {
+        "title": "Giải Mã Bệnh Chàm Ở Trẻ Sơ Sinh",
+        "excerpt": "Cách phát hiện các dấu hiệu sớm của bệnh chàm và những thành phần dịu nhẹ tốt nhất để làm dịu các đợt bùng phát một cách tự nhiên.",
+        "category": "Khoa Học & Giáo Dục"
+      },
+      {
+        "title": "Cam Kết Bền Vững Của Chúng Tôi: 2025 Và Tương Lai",
+        "excerpt": "Đọc về cam kết của chúng tôi trong việc giảm thiểu rác thải nhựa và đảm bảo các thành phần của chúng tôi có nguồn gốc đạo đức.",
+        "category": "Câu Chuyện Thương Hiệu"
+      },
+      {
+        "title": "Tìm Hiểu Về Chống Nắng Cho Trẻ Sơ Sinh",
+        "excerpt": "Khi nào an toàn để sử dụng kem chống nắng cho bé? Hướng dẫn toàn diện cho sự an toàn trong mùa hè.",
+        "category": "Mẹo Nuôi Dạy Trẻ"
+      }
+    ]
+  }
+}

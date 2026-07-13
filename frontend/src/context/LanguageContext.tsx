@@ -3,8 +3,9 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import en from "../locales/en.json";
 import id from "../locales/id.json";
+import vi from "../locales/vi.json";
 
-type Language = "en" | "id";
+type Language = "en" | "id" | "vi";
 type Dictionary = typeof en;
 
 interface LanguageContextType {
@@ -22,14 +23,14 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   // Load language from localStorage if available
   useEffect(() => {
     const savedLang = localStorage.getItem("loluna-lang") as Language;
-    if (savedLang && (savedLang === "en" || savedLang === "id")) {
+    if (savedLang && (savedLang === "en" || savedLang === "id" || savedLang === "vi")) {
       setLanguage(savedLang);
     }
   }, []);
 
   // Update dictionary and localStorage when language changes
   useEffect(() => {
-    setDictionary(language === "en" ? en : id);
+    setDictionary(language === "en" ? en : language === "id" ? id : vi as unknown as Dictionary);
     localStorage.setItem("loluna-lang", language);
   }, [language]);
 

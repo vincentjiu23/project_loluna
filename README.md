@@ -5,6 +5,7 @@ Welcome to the Loluna Project repository! This project contains the modern, resp
 ## 🚀 Features
 
 - **Next.js App Router**: Built with the latest Next.js features for optimal performance and SEO.
+- **Custom CMS Integration**: Full-stack dynamic content management using Prisma ORM and SQLite, allowing admins to easily customize all pages (Home, About, Products, Articles, Contact, Stores).
 - **Tailwind CSS**: Custom themed design system for a premium look and feel.
 - **Framer Motion**: Smooth scroll reveals, dynamic hover states, and premium micro-interactions.
 - **Responsive Design**: Flawless experience across mobile, tablet, and desktop.

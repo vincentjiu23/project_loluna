@@ -3,22 +3,32 @@
 import Link from "next/link";
 import { useTranslation } from "@/context/LanguageContext";
 
-export default function Footer() {
+export default function Footer({ data = {} }: { data?: any }) {
   const { t } = useTranslation();
+  
+  const description = data.description || t("footer.slogan");
+  const copyright = data.copyright || t("footer.copyright");
+  const igLink = data.instagram || "#";
+  const tiktokLink = data.tiktok || "#";
+  const waLink = data.whatsapp || "#";
+
   return (
     <footer className="bg-surface-container-lowest w-full py-16 px-margin-mobile md:px-margin-desktop flex flex-col items-center gap-8">
       <div className="max-w-container-max w-full grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="col-span-1 flex flex-col gap-4">
           <img src="/images/Navigation/Logo.png" alt="Loluna Logo" className="h-10 object-contain object-left max-w-fit" />
           <p className="text-on-surface-variant font-label-md">
-            {t("footer.slogan")}
+            {description}
           </p>
           <div className="flex gap-4 mt-4">
-            <Link href="#" className="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
-              <span className="material-symbols-outlined text-sm">language</span>
+            <Link href={igLink} target="_blank" className="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+              <span className="material-symbols-outlined text-sm">photo_camera</span>
             </Link>
-            <Link href="#" className="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
-              <span className="material-symbols-outlined text-sm">share</span>
+            <Link href={tiktokLink} target="_blank" className="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+              <span className="material-symbols-outlined text-sm">music_note</span>
+            </Link>
+            <Link href={waLink} target="_blank" className="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+              <span className="material-symbols-outlined text-sm">chat</span>
             </Link>
           </div>
         </div>
@@ -49,7 +59,7 @@ export default function Footer() {
       </div>
       <div className="w-full border-t border-outline-variant/30 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-on-surface-variant text-sm opacity-90">
-          {t("footer.copyright")}
+          {copyright}
         </p>
         <div className="flex gap-6">
           <Link className="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">{t("footer.privacy")}</Link>
